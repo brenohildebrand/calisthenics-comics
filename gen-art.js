@@ -1,5 +1,5 @@
 // Renders Captain Rep art: art/<slug>.webp + .svg, hero + category banners. Run locally: node gen-art.js (outputs committed).
-const sharp=require('sharp'),fs=require('fs');const {art,mascot,props,shade}=require('./art2');const {POSES}=require('./poses');
+const sharp=require('sharp'),fs=require('fs');const {art,mascot,props,shade,prepared}=require('./art3');const {POSES}=require('./poses');
 const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const COL={push:'#ff3b3b',pull:'#2f6bff',legs:'#18b85a',core:'#ffb800',skills:'#a43bff'};
 const M=require('./data.js').map(r=>({name:r[0],slug:slug(r[0]),cat:r[1]}));
@@ -7,7 +7,7 @@ fs.mkdirSync('art',{recursive:true});
 const banner=(poseKey,c,w,h,title,scale,tx,ty,suit=c)=>{const rays=Array.from({length:36},(_,i)=>{const a=i*Math.PI/18;return `<polygon points="${w/2},${h/2} ${w/2+1400*Math.cos(a)},${h/2+1400*Math.sin(a)} ${w/2+1400*Math.cos(a+.08)},${h/2+1400*Math.sin(a+.08)}" fill="#fff" opacity="${i%2?.25:.45}"/>`}).join('');
  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="${title}"><defs><pattern id="hd" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="3.6" fill="${shade(c,.85)}" opacity=".45"/></pattern><radialGradient id="rg"><stop offset="0" stop-color="#ffe14d"/><stop offset="1" stop-color="${c}"/></radialGradient></defs>
 <rect width="${w}" height="${h}" fill="url(#rg)"/>${rays}<rect width="${w}" height="${h}" fill="url(#hd)"/>
-<g transform="translate(${tx} ${ty}) scale(${scale})">${props(POSES[poseKey].props.replace(/floor:\d+/,''),c)}${mascot(POSES[poseKey],suit)}</g>
+<g transform="translate(${tx} ${ty}) scale(${scale})">${(()=>{const pp=prepared(poseKey);return props(POSES[poseKey].props.replace(/floor:\d+/,''),pp)+mascot(pp,suit)})()}</g>
 <rect x="5" y="5" width="${w-10}" height="${h-10}" fill="none" stroke="#111" stroke-width="10"/></svg>`};
 const hero=()=>{let s=banner('muscle_up','#ff3b3b',800,380,'Comic hero panel: Captain Rep blasting through a muscle-up',1.65,235,30,'#2f6bff');
  s=s.replace('</svg>',`<g transform="rotate(-10 640 120)"><polygon points="640,30 660,80 715,60 690,105 760,120 690,140 715,185 660,160 640,210 620,160 565,185 590,140 520,120 590,105 565,60 620,80" fill="#fff" stroke="#111" stroke-width="7"/><text x="640" y="140" font-family="Bangers" font-size="60" text-anchor="middle" fill="#e5262f" stroke="#111" stroke-width="2.5">POW!</text></g>

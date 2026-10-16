@@ -1,5 +1,5 @@
 // Generates og/<slug>.png (1200x630). Run locally: node og.js (outputs are committed).
-const sharp=require('sharp'),fs=require('fs');const {art}=require('./art2');
+const sharp=require('sharp'),fs=require('fs');const {art}=require('./art3');
 process.env.SKIP=1;const {M,CAT}=require('./build.js');
 fs.mkdirSync('og',{recursive:true});
 const esc=s=>s.replace(/&/g,'&amp;');

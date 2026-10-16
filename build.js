@@ -1,5 +1,5 @@
 const fs=require('fs');
-const {art}=require('./art2');const CFG=require('./config');
+const {art}=require('./art3');const CFG=require('./config');
 const BASE='/calisthenics-comics',SITE='https://brenohildebrand.github.io'+BASE,TODAY=new Date().toISOString().slice(0,10);
 const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
