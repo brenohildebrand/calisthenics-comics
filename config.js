@@ -1,0 +1,6 @@
+// Fill these in once accounts exist; empty = feature shows "coming soon" UI and loads nothing.
+module.exports={
+  newsletterAction:'',   // e.g. 'https://buttondown.com/api/emails/embed-subscribe/<username>'
+  newsletterProvider:'', // 'buttondown'
+  goatcounter:'',        // e.g. 'calisthenicscomics' -> https://calisthenicscomics.goatcounter.com/count
+};

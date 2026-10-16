@@ -1,52 +1,49 @@
-const fs=require('fs'),path=require('path');
-const BASE='/calisthenics-comics';const SITE='https://brenohildebrand.github.io'+BASE;
+const fs=require('fs');
+const {art}=require('./art');const CFG=require('./config');
+const BASE='/calisthenics-comics',SITE='https://brenohildebrand.github.io'+BASE,TODAY=new Date().toISOString().slice(0,10);
 const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const tier=d=>d<=2?'Rookie':d<=4?'Brawler':d<=6?'Hero':d<=8?'Champion':d==9?'Titan':'Legend';
-const CAT={push:['Push','#ff3b3b'],pull:['Pull','#2f6bff'],legs:['Legs','#18b85a'],core:['Core','#ffb800'],skills:['Skills','#a43bff']};
-const rows=require('./data.js');
-const M=rows.map(([name,cat,muscles,diff,w,how,e,h])=>({name,slug:slug(name),cat,muscles,diff,tier:tier(diff),weighted:!!w,weightHow:w,how,easier:e?slug(e):'',harder:h?slug(h):''}));
+const CAT={push:['Push','#ff3b3b','Push movements build chest, shoulders and triceps — from wall push-ups to the planche push-up.'],pull:['Pull','#2f6bff','Pull movements build lats, biceps and grip — from dead hangs to the one-arm pull-up and muscle-up.'],legs:['Legs','#18b85a','Bodyweight leg training: squats, lunges, pistols and Nordic curls for strong, springy legs.'],core:['Core','#ffb800','Core work from dead bugs to dragon flags and the manna — the foundation of every skill.'],skills:['Skills','#a43bff','Calisthenics skills: handstands, levers, planches and the human flag. The boss fights.']};
+const HOLDS=new Set(['dead-hang','plank','side-plank','hollow-body-hold','arch-body-hold','wall-sit','l-sit','v-sit','manna','handstand-wall-hold','crow-pose','freestanding-handstand','one-arm-handstand','elbow-lever','frog-stand','tuck-planche','straddle-planche','full-planche','tuck-front-lever','straddle-front-lever','full-front-lever','back-lever','human-flag','bridge']);
+const M=require('./data.js').map(([name,cat,muscles,diff,w,how,e,h])=>({name,slug:slug(name),cat,muscles,diff,tier:tier(diff),weighted:!!w,weightHow:w,how,easier:e?slug(e):'',harder:h?slug(h):''}));
 const by=Object.fromEntries(M.map(m=>[m.slug,m]));
-for(const m of M)for(const k of['easier','harder'])if(m[k]&&!by[m[k]])throw 'bad link '+m.name+' '+m[k];
+for(const m of M)for(const k of['easier','harder'])if(m[k]&&!by[m[k]])throw 'bad link '+m.name;
+const MIST={push:['Flaring elbows straight out to 90° — keep them around 45° to protect the shoulders.','Sagging hips or piking up — squeeze glutes and brace like a plank.','Cutting the range short — go all the way down and lock out at the top.','Pushing the head forward instead of moving the whole body as one unit.'],
+pull:['Kipping or swinging to cheat reps — pause in the dead hang between reps.','Half reps — start from straight arms and finish with the chin (or chest) over the bar.','Shrugging into the ears — pull the shoulder blades down and back first.','Skipping grip and scapular work, which limits every pulling skill.'],
+legs:['Knees caving inward — push them out in line with the toes.','Heels lifting off the floor — sit back and keep weight mid-foot.','Dropping fast with no control — own the lowering phase.','Rounding the lower back at the bottom.'],
+core:['Arching the lower back — keep it pressed toward the floor (posterior pelvic tilt).','Holding your breath — breathe shallow and keep the brace.','Using momentum instead of control.','Chasing long, sloppy holds instead of short, perfect ones.'],
+skills:['Bending the arms on straight-arm skills — lock the elbows and train the tendons slowly.','Rushing to the next progression before owning the current one.','Skipping wrist and shoulder warm-ups.','Training to failure every session — skills love fresh, frequent practice.']};
+const plan=m=>{const H=HOLDS.has(m.slug),d=m.diff;const r=d<=2?[H?'3 × 20–30 s holds':'3 × 10–15 reps','60 s','3×/week']:d<=4?[H?'3–4 × 15–30 s holds':'3–4 × 8–12 reps','90 s','3×/week']:d<=6?[H?'4–5 × 10–20 s holds':'4 × 5–8 reps','2 min','2–3×/week']:d<=8?[H?'5–6 × 5–10 s holds':'5 × 3–5 reps','2–3 min','2–3×/week']:[H?'6–8 × 3–6 s holds':'5–8 × 1–3 reps (singles welcome)','3 min','2×/week'];
+ return {scheme:r[0],rest:r[1],freq:r[2],goal:H?(d>=7?'Hold 10–15 s clean':'Hold 30–60 s clean'):(d>=7?'3 × 5 clean reps':'3 × 12–15 clean reps')}};
+const chain=m=>{const down=[],up=[];let x=m;const seen=new Set([m.slug]);while(x.easier&&!seen.has(x.easier)){x=by[x.easier];seen.add(x.slug);down.unshift(x)}x=m;while(x.harder&&!seen.has(x.harder)){x=by[x.harder];seen.add(x.slug);up.push(x)}return[...down,m,...up]};
+const faq=m=>{const p=plan(m),e=m.easier&&by[m.easier],h=m.harder&&by[m.harder];return[
+ [`How hard is the ${m.name}?`,`The ${m.name} is Level ${m.diff}/10 (${m.tier} tier) in the Calisthenics Comics difficulty scale.`],
+ [`What muscles does the ${m.name} work?`,`It mainly works: ${m.muscles}.`],
+ [`Can you do the ${m.name} weighted?`,m.weighted?`Yes. Add load with: ${m.weightHow}. Only add weight once you can do ${p.goal.toLowerCase()} with perfect form.`:`Not practically — it's a bodyweight-only movement. Make it harder by moving to ${h?h.name:'stricter tempo and longer holds'}.`],
+ [`What should I learn before the ${m.name}?`,e?`Build up with the ${e.name} (Level ${e.diff}) first.`:`It's a starting movement — no prerequisite needed.`],
+ [`How many sets and reps of the ${m.name} should I do?`,`A good starting point at this level: ${p.scheme}, resting ${p.rest}, ${p.freq}. Move on when you can do ${p.goal.toLowerCase()}.`]]};
 
-// ---------- ART ----------
-const S='stroke="#111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"';
-const head=(x,y,c)=>`<circle cx="${x}" cy="${y}" r="14" fill="${c}" stroke="#111" stroke-width="6"/>`;
-const pl=pts=>`<polyline ${S} points="${pts}"/>`;
-const POSES={
- push:c=>`<rect x="10" y="150" width="180" height="10" fill="#111"/>${head(150,98,c)}${pl('135,108 60,128 30,140')}${pl('120,112 125,148')}${pl('140,108 145,148')}<path d="M40 70 l10 10 M30 95 h14" ${S}/>`,
- pull:c=>`<rect x="30" y="18" width="140" height="10" rx="4" fill="#111"/>${pl('70,28 85,62 100,72')}${pl('130,28 115,62 100,72')}${head(100,64,c)}${pl('100,80 100,130')}${pl('100,130 85,170')}${pl('100,130 118,168')}<path d="M40 120 v20 M160 120 v20" ${S}/>`,
- legs:c=>`<rect x="10" y="168" width="180" height="10" fill="#111"/>${head(95,52,c)}${pl('95,66 95,112')}${pl('95,80 145,82')}${pl('95,112 120,138 100,168')}${pl('95,112 60,118 30,112')}<path d="M150 60 l15 -10 M155 95 l18 5" ${S}/>`,
- core:c=>`<rect x="10" y="150" width="180" height="10" fill="#111"/>${head(55,102,c)}${pl('68,110 120,110 175,70')}${pl('70,110 60,148')}${pl('84,110 86,148')}<path d="M120 50 q20 -15 40 0" ${S}/>`,
- skills:c=>`<rect x="10" y="170" width="180" height="10" fill="#111"/>${pl('85,170 90,120')}${pl('115,170 110,120')}${head(100,108,c)}${pl('100,96 100,55')}${pl('100,55 80,18')}${pl('100,55 125,20')}<path d="M40 40 l12 12 M160 40 l-12 12 M30 100 h16 M170 100 h-16" ${S}/>`
-};
-const art=(cat,extra='')=>{const c=CAT[cat][1];return `<svg viewBox="0 0 200 190" role="img" aria-label="${CAT[cat][0]} comic pose" ${extra}><defs><pattern id="ht-${cat}" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="2.4" fill="${c}" opacity=".45"/></pattern></defs><rect width="200" height="190" fill="#fff8e1"/><polygon points="100,10 118,60 175,40 135,85 190,120 128,118 140,180 100,135 60,180 72,118 10,120 65,85 25,40 82,60" fill="url(#ht-${cat})"/>${POSES[cat](c)}</svg>`};
-const hero=`<svg viewBox="0 0 800 380" role="img" aria-label="Comic hero panel: a calisthenics athlete blasting through a muscle-up" class="hero-art"><defs><pattern id="hd" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="3.5" fill="#ff3b3b" opacity=".35"/></pattern><radialGradient id="rg"><stop offset="0" stop-color="#ffe14d"/><stop offset="1" stop-color="#ff8a00"/></radialGradient></defs>
-<rect width="800" height="380" fill="url(#rg)"/><rect width="800" height="380" fill="url(#hd)"/>
-${Array.from({length:24},(_,i)=>{const a=i*Math.PI/12;return `<line x1="400" y1="190" x2="${400+700*Math.cos(a)}" y2="${190+700*Math.sin(a)}" stroke="#fff" stroke-width="${i%2?6:14}" opacity=".35"/>`}).join('')}
-<polygon points="590,40 625,95 690,70 655,125 735,150 650,165 680,235 615,190 580,255 565,180 495,200 540,140 480,95 555,105" fill="#fff" stroke="#111" stroke-width="8"/>
-<text x="610" y="160" font-family="Bangers,Impact,sans-serif" font-size="64" text-anchor="middle" fill="#ff3b3b" stroke="#111" stroke-width="3" transform="rotate(-10 610 150)">POW!</text>
-<rect x="150" y="90" width="420" height="16" rx="6" fill="#111"/>
-<g stroke="#111" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<polyline points="300,98 285,140 330,150"/><polyline points="420,98 435,140 390,150"/>
-<polyline points="360,92 360,200"/><polyline points="360,200 330,270 345,330"/><polyline points="360,200 395,265 390,330"/></g>
-<circle cx="360" cy="62" r="30" fill="#2f6bff" stroke="#111" stroke-width="10"/>
-<path d="M330 55 h60" stroke="#ff3b3b" stroke-width="10"/>
-<g stroke="#111" stroke-width="6" stroke-linecap="round"><line x1="230" y1="160" x2="200" y2="175"/><line x1="230" y1="200" x2="195" y2="205"/><line x1="490" y1="160" x2="520" y2="175"/><line x1="490" y1="200" x2="525" y2="205"/></g>
-<path d="M40 40 h230 a14 14 0 0 1 14 14 v50 a14 14 0 0 1 -14 14 h-150 l-30 30 v-30 h-50 a14 14 0 0 1 -14 -14 v-50 a14 14 0 0 1 14 -14z" fill="#fff" stroke="#111" stroke-width="6"/>
-<text x="155" y="92" font-family="Bangers,Impact,sans-serif" font-size="36" text-anchor="middle" fill="#111">LEVEL UP!</text></svg>`;
-
-// ---------- PAGE SHELL ----------
 const fonts=`<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">`;
-const page=({title,desc,url,body,ld})=>`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)}</title><meta name="description" content="${esc(desc)}"><link rel="canonical" href="${SITE}${url}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="website"><meta property="og:url" content="${SITE}${url}"><meta name="twitter:card" content="summary"><meta name="theme-color" content="#ffe14d"><link rel="icon" href="/favicon.svg">${fonts}<link rel="stylesheet" href="/style.css">${ld?`<script type="application/ld+json">${JSON.stringify(ld)}</script>`:''}</head><body><a class="skip" href="#main">Skip to content</a><header class="top"><a href="/" class="logo">CALISTHENICS <span>COMICS</span></a><nav><a href="/#library">Library</a><a href="/#tiers">Tiers</a></nav></header><main id="main">${body}</main><footer class="foot"><p>Original comic art. Train smart: progress gradually and stop if you feel pain.</p><p>© ${new Date().getFullYear()} Calisthenics Comics</p></footer></body></html>`;
+const analytics=CFG.goatcounter?`<script data-goatcounter="https://${CFG.goatcounter}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>`:'';
+const news=()=>`<section class="news" aria-labelledby="nl"><h2 id="nl">Join the Training Squad 💥</h2><p>One comic-style move breakdown + progression tip per week. Free, no spam.</p>
+<form class="nlform" ${CFG.newsletterAction?`action="${CFG.newsletterAction}" method="post" target="_blank"`:'data-pending="1"'}><label class="sr" for="em">Email</label><input id="em" type="email" name="email" required placeholder="you@example.com" autocomplete="email"><button class="btn" type="submit">Sign me up!</button></form><p class="nlmsg" role="status"></p></section>`;
+const page=({title,desc,url,body,ld,og})=>`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)}</title><meta name="description" content="${esc(desc)}"><link rel="canonical" href="${SITE}${url}"><meta property="og:site_name" content="Calisthenics Comics"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="website"><meta property="og:url" content="${SITE}${url}"><meta property="og:image" content="${SITE}/og/${og||'home'}.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="${SITE}/og/${og||'home'}.png"><meta name="theme-color" content="#ffe14d"><link rel="icon" href="/favicon.svg"><link rel="alternate" type="text/plain" title="LLM summary" href="/llms.txt">${fonts}<link rel="stylesheet" href="/style.css">${(ld||[]).map(l=>`<script type="application/ld+json">${JSON.stringify(l)}</script>`).join('')}${analytics}</head><body><a class="skip" href="#main">Skip to content</a><header class="top"><a href="/" class="logo">CALISTHENICS <span>COMICS</span></a><nav aria-label="Main">${Object.keys(CAT).map(c=>`<a href="/c/${c}/">${CAT[c][0]}</a>`).join('')}</nav></header><main id="main">${body}${news()}</main><footer class="foot"><nav aria-label="Footer">${Object.keys(CAT).map(c=>`<a href="/c/${c}/">${CAT[c][0]} moves</a>`).join(' · ')} · <a href="/sitemap.xml">Sitemap</a> · <a href="/llms.txt">llms.txt</a></nav><p>Original comic art. Train smart: progress gradually and stop if you feel pain. Not medical advice.</p><p>© ${new Date().getFullYear()} Calisthenics Comics</p></footer><script src="/site.js" defer></script></body></html>`;
 const ad=(label,size)=>`<aside class="ad" aria-label="Sponsor placeholder"><span>SPONSOR SLOT · ${label}</span><small>${size} · your brand here</small></aside>`;
 const bar=d=>`<div class="power" role="img" aria-label="Difficulty ${d} of 10">${Array.from({length:10},(_,i)=>`<i class="${i<d?'on':''}"></i>`).join('')}</div>`;
 const badge=m=>`<span class="lvl t-${m.tier.toLowerCase()}">LV ${m.diff} · ${m.tier}</span>`;
-const card=m=>`<a class="card" href="/m/${m.slug}/" data-slug="${m.slug}" style="--c:${CAT[m.cat][1]}"><div class="art">${art(m.cat)}</div><div class="bubble"><h3>${esc(m.name)}</h3><p class="mus">${esc(m.muscles)}</p>${bar(m.diff)}<div class="tags">${badge(m)}<span class="tag">${CAT[m.cat][0]}</span>${m.weighted?'<span class="tag w">⚖ Weighted</span>':''}</div></div></a>`;
+const pic=(m,sfx='')=>art(m.slug,CAT[m.cat][1],m.name,{idSuffix:sfx});
+const card=(m,sfx='')=>`<a class="card" href="/m/${m.slug}/" data-slug="${m.slug}" style="--c:${CAT[m.cat][1]}"><div class="art">${pic(m,sfx)}</div><div class="bubble"><h3>${esc(m.name)}</h3><p class="mus">${esc(m.muscles)}</p>${bar(m.diff)}<div class="tags">${badge(m)}<span class="tag">${CAT[m.cat][0]}</span>${m.weighted?'<span class="tag w">⚖ Weighted</span>':''}</div></div></a>`;
+const faqHTML=f=>`<section class="faq"><h2>FAQ</h2>${f.map(([q,a])=>`<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</section>`;
+const faqLD=f=>({'@context':'https://schema.org','@type':'FAQPage',mainEntity:f.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))});
+const crumbLD=items=>({'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:items.map(([n,u],i)=>({'@type':'ListItem',position:i+1,name:n,item:SITE+u}))});
 
-const out='dist';fs.rmSync(out,{recursive:true,force:true});fs.mkdirSync(out+'/m',{recursive:true});
+const out='dist';fs.rmSync(out,{recursive:true,force:true});fs.mkdirSync(out,{recursive:true});
+const write=(p,s)=>{fs.mkdirSync(require('path').dirname(out+p),{recursive:true});fs.writeFileSync(out+p,s)};
+const hero=fs.readFileSync('hero.svg','utf8');
 const tiersHTML=[['Rookie','1–2'],['Brawler','3–4'],['Hero','5–6'],['Champion','7–8'],['Titan','9'],['Legend','10']].map(([t,r])=>`<li class="lvl t-${t.toLowerCase()}">${t}<small>LV ${r}</small></li>`).join('');
-const home=`<section class="hero"><div class="hero-copy"><h1>Every Calisthenics Move.<br><span>Comic-Book Powered.</span></h1><p>${M.length} bodyweight movements ranked from Level 1 to 10. Find your next power-up, check what can be loaded, and follow the progression path from Rookie to Legend.</p><a class="btn" href="#library">Start the quest ↓</a></div>${hero}</section>
+const homeFaq=[['What is calisthenics?','Calisthenics is strength training using your own bodyweight — push-ups, pull-ups, squats, levers, handstands and more. Many moves can also be loaded with a vest or dip belt.'],['How are difficulty levels decided?',`Every move is rated 1–10 by the strength, skill and prerequisites it needs, grouped into six XP tiers from Rookie to Legend. There are ${M.length} movements in the library.`],['Where should a beginner start?','Start with Level 1–2 Rookie moves: wall push-ups, dead hangs, bodyweight squats, plank and glute bridges. Each move page links to its easier and harder progression.'],['Can you build muscle with calisthenics?','Yes. Progress by moving to harder variations or adding load (weighted vest or dip belt) once you hit the target reps.']];
+write('/index.html',page({title:'Calisthenics Comics — Every bodyweight movement, ranked 1–10',desc:`Comic-style encyclopedia of ${M.length} calisthenics movements with difficulty levels, weighted options, sets & reps and progressions.`,url:'/',ld:[{'@context':'https://schema.org','@type':'WebSite',name:'Calisthenics Comics',url:SITE+'/'},faqLD(homeFaq)],body:`<section class="hero"><div class="hero-copy"><h1>Every Calisthenics Move.<br><span>Comic-Book Powered.</span></h1><p>${M.length} bodyweight movements ranked from Level 1 to 10. Find your next power-up, check what can be loaded, and follow the progression path from Rookie to Legend.</p><a class="btn" href="#library">Start the quest ↓</a></div>${hero}</section>
 ${ad('Leaderboard','728×90')}
 <section id="tiers" class="tiers"><h2>XP Tiers</h2><ol>${tiersHTML}</ol></section>
 <section id="library"><h2>Movement Library</h2>
@@ -56,33 +53,48 @@ ${ad('Leaderboard','728×90')}
 <label><select id="wt" aria-label="Weighted filter"><option value="">Weighted: any</option><option value="y">Can be weighted</option><option value="n">Bodyweight only</option></select></label>
 <label><select id="sort" aria-label="Sort"><option value="diff">Sort: level</option><option value="name">Sort: A–Z</option></select></label></div>
 <p id="count" aria-live="polite"></p></div>
-<div id="grid" class="grid">${M.slice().sort((a,b)=>a.diff-b.diff).map(card).join('')}</div></section>
-${ad('Footer banner','970×250')}
-<script>window.MOVES=${JSON.stringify(M.map(({name,slug,cat,muscles,diff,tier,weighted,how})=>({name,slug,cat,muscles,diff,tier,weighted,how})))}</script><script type="module" src="/app.js"></script>`;
-fs.writeFileSync(out+'/index.html',page({title:'Calisthenics Comics — Every bodyweight movement, ranked 1–10',desc:`Comic-style encyclopedia of ${M.length} calisthenics movements with difficulty levels, weighted options and progressions.`,url:'/',body:home,ld:{'@context':'https://schema.org','@type':'WebSite',name:'Calisthenics Comics',url:SITE}}));
+<div id="grid" class="grid">${M.slice().sort((a,b)=>a.diff-b.diff).map(m=>card(m)).join('')}</div></section>
+${ad('Footer banner','970×250')}${faqHTML(homeFaq)}
+<script>window.MOVES=${JSON.stringify(M.map(({name,slug,cat,muscles,diff,tier,weighted,how})=>({name,slug,cat,muscles,diff,tier,weighted,how})))}</script><script type="module" src="/app.js"></script>`}));
 
-for(const m of M){
+for(const c of Object.keys(CAT)){const list=M.filter(m=>m.cat==c).sort((a,b)=>a.diff-b.diff);
+ write(`/c/${c}/index.html`,page({title:`${CAT[c][0]} Calisthenics Exercises — ${list.length} moves ranked 1–10 | Calisthenics Comics`,desc:CAT[c][2],url:`/c/${c}/`,og:'home',ld:[crumbLD([['Home','/'],[CAT[c][0],`/c/${c}/`]]),{'@context':'https://schema.org','@type':'ItemList',itemListElement:list.map((m,i)=>({'@type':'ListItem',position:i+1,url:`${SITE}/m/${m.slug}/`,name:m.name}))}],
+ body:`<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › ${CAT[c][0]}</nav><section class="hub" style="--c:${CAT[c][1]}"><h1>${CAT[c][0]} Moves</h1><p class="lead">${CAT[c][2]} ${list.length} movements, easiest first.</p></section><div class="grid">${list.map(m=>card(m)).join('')}</div>${ad('Category banner','728×90')}`}));}
+
+for(const m of M){const p=plan(m),f=faq(m),ch=chain(m),c=CAT[m.cat];
  const link=(s,l)=>s?`<a class="prog" href="/m/${s}/"><small>${l}</small>${esc(by[s].name)} <em>LV ${by[s].diff}</em></a>`:`<span class="prog none"><small>${l}</small>${l=='Harder'?'You reached the top! 🏆':'Starting point'}</span>`;
- const related=M.filter(x=>x.cat==m.cat&&x.slug!=m.slug).sort((a,b)=>Math.abs(a.diff-m.diff)-Math.abs(b.diff-m.diff)).slice(0,4);
- const body=`<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/#library">${CAT[m.cat][0]}</a> › ${esc(m.name)}</nav>
-<article class="detail" style="--c:${CAT[m.cat][1]}"><div class="panel">${art(m.cat)}</div><div class="info"><h1>${esc(m.name)}</h1>${badge(m)}${bar(m.diff)}
+ const related=M.filter(x=>x.cat==m.cat&&x.slug!=m.slug&&!ch.includes(x)).sort((a,b)=>Math.abs(a.diff-m.diff)-Math.abs(b.diff-m.diff)).slice(0,4);
+ const sameLv=M.filter(x=>x.cat!=m.cat&&Math.abs(x.diff-m.diff)<=0).slice(0,6);
+ const mist=[...c[0]&&MIST[m.cat]];if(m.weighted)mist.push(`Adding weight before you can do ${p.goal.toLowerCase()} with perfect form.`);
+ const body=`<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/c/${m.cat}/">${c[0]}</a> › ${esc(m.name)}</nav>
+<article class="detail" style="--c:${c[1]}"><div class="panel">${pic(m,'d')}</div><div class="info"><h1>${esc(m.name)}</h1>${badge(m)}${bar(m.diff)}
 <div class="bubble big"><h2>How to</h2><p>${esc(m.how)}</p></div>
-<dl><dt>Category</dt><dd>${CAT[m.cat][0]}</dd><dt>Muscles</dt><dd>${esc(m.muscles)}</dd><dt>Weighted?</dt><dd>${m.weighted?'Yes — '+esc(m.weightHow):'No — bodyweight only'}</dd></dl>
+<dl><dt>Category</dt><dd><a href="/c/${m.cat}/">${c[0]}</a></dd><dt>Muscles</dt><dd>${esc(m.muscles)}</dd><dt>Weighted?</dt><dd>${m.weighted?'Yes — '+esc(m.weightHow):'No — bodyweight only'}</dd><dt>Type</dt><dd>${HOLDS.has(m.slug)?'Isometric hold':'Dynamic reps'}</dd></dl>
 <div class="progs">${link(m.easier,'Easier')}${link(m.harder,'Harder')}</div></div></article>
+<div class="two"><section class="box"><h2>Sets &amp; reps</h2><table><tr><th>Scheme</th><td>${p.scheme}</td></tr><tr><th>Rest</th><td>${p.rest}</td></tr><tr><th>Frequency</th><td>${p.freq}</td></tr><tr><th>Level-up goal</th><td>${p.goal}${m.harder?` → then try <a href="/m/${m.harder}/">${esc(by[m.harder].name)}</a>`:''}</td></tr></table></section>
+<section class="box"><h2>Common mistakes</h2><ul class="mist">${mist.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section></div>
+${ch.length>1?`<section><h2>Progression ladder</h2><ol class="ladder">${ch.map(x=>`<li${x==m?' aria-current="page" class="me"':''}>${x==m?`<b>${esc(x.name)}</b>`:`<a href="/m/${x.slug}/">${esc(x.name)}</a>`} <span class="lvl t-${x.tier.toLowerCase()}">LV ${x.diff}</span></li>`).join('')}</ol></section>`:''}
 ${ad('In-article','300×250')}
-<section><h2>Related ${CAT[m.cat][0]} moves</h2><div class="grid">${related.map(card).join('')}</div></section>`;
- fs.mkdirSync(`${out}/m/${m.slug}`,{recursive:true});
- fs.writeFileSync(`${out}/m/${m.slug}/index.html`,page({title:`${m.name} — Level ${m.diff} ${m.tier} | Calisthenics Comics`,desc:`${m.name}: ${m.how} Difficulty ${m.diff}/10. Muscles: ${m.muscles}.`,url:`/m/${m.slug}/`,body,ld:{'@context':'https://schema.org','@type':'HowTo',name:m.name,description:m.how,step:[{'@type':'HowToStep',text:m.how}]}}));
+${faqHTML(f)}
+${related.length?`<section><h2>More ${c[0]} moves</h2><div class="grid">${related.map(x=>card(x,'r')).join('')}</div></section>`:''}
+${sameLv.length?`<section><h2>Other Level ${m.diff} moves</h2><p class="chipsl">${sameLv.map(x=>`<a class="tag" href="/m/${x.slug}/">${esc(x.name)}</a>`).join(' ')}</p></section>`:''}`;
+ write(`/m/${m.slug}/index.html`,page({title:`${m.name} — Level ${m.diff} ${m.tier}: how to, sets & progressions | Calisthenics Comics`,desc:`${m.name} (Level ${m.diff}/10): ${m.how} Muscles: ${m.muscles}. Sets: ${p.scheme}.`,url:`/m/${m.slug}/`,og:m.slug,
+ ld:[{'@context':'https://schema.org','@type':'HowTo',name:`How to do the ${m.name}`,description:m.how,image:`${SITE}/og/${m.slug}.png`,step:[{'@type':'HowToStep',text:m.how}]},faqLD(f),crumbLD([['Home','/'],[c[0],`/c/${m.cat}/`],[m.name,`/m/${m.slug}/`]])],body}));
 }
-fs.writeFileSync(out+'/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${['/',...M.map(m=>`/m/${m.slug}/`)].map(u=>`<url><loc>${SITE}${u}</loc></url>`).join('')}</urlset>`);
-fs.writeFileSync(out+'/robots.txt',`User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`);
-fs.writeFileSync(out+'/favicon.svg',`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#ffe14d" stroke="#111" stroke-width="5"/><text x="32" y="46" font-family="Impact" font-size="38" text-anchor="middle" fill="#ff3b3b" stroke="#111" stroke-width="2">C!</text></svg>`);
-fs.writeFileSync(out+'/404.html',page({title:'Not found | Calisthenics Comics',desc:'Page not found',url:'/404',body:'<section class="hero-copy"><h1>KA-BOOM! 404</h1><p>That move fell off the bar. <a href="/">Back to the library</a>.</p></section>'}));
-fs.copyFileSync('style.css',out+'/style.css');fs.copyFileSync('app.js',out+'/app.js');
+const urls=['/',...Object.keys(CAT).map(c=>`/c/${c}/`),...M.map(m=>`/m/${m.slug}/`)];
+write('/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${urls.map(u=>{const s=u.startsWith('/m/')?u.slice(3,-1):'home';return `<url><loc>${SITE}${u}</loc><lastmod>${TODAY}</lastmod><changefreq>weekly</changefreq><priority>${u=='/'?'1.0':u.startsWith('/c/')?'0.8':'0.6'}</priority><image:image><image:loc>${SITE}/og/${s}.png</image:loc></image:image></url>`}).join('\n')}\n</urlset>\n`);
+write('/robots.txt',`User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n# LLM-friendly summaries: ${SITE}/llms.txt and ${SITE}/llms-full.txt\n`);
+const intro=`# Calisthenics Comics\n\n> A comic-style encyclopedia of ${M.length} calisthenics (bodyweight) movements. Each move has a difficulty level 1–10, an XP tier (Rookie 1–2, Brawler 3–4, Hero 5–6, Champion 7–8, Titan 9, Legend 10), muscles worked, whether and how it can be weighted, a how-to, sets/reps by level, common mistakes and easier/harder progressions.\n\n`;
+write('/llms.txt',intro+`## Categories\n\n${Object.keys(CAT).map(c=>`- [${CAT[c][0]}](${SITE}/c/${c}/): ${CAT[c][2]}`).join('\n')}\n\n## Movements\n\n${M.map(m=>`- [${m.name}](${SITE}/m/${m.slug}/): Level ${m.diff} ${m.tier}, ${CAT[m.cat][0]}. ${m.muscles}.`).join('\n')}\n\n## Optional\n\n- [Full content in one file](${SITE}/llms-full.txt)\n- [Sitemap](${SITE}/sitemap.xml)\n`);
+write('/llms-full.txt',intro+M.map(m=>{const p=plan(m);return `## ${m.name}\n\nURL: ${SITE}/m/${m.slug}/\n- Category: ${CAT[m.cat][0]}\n- Difficulty: ${m.diff}/10 (${m.tier})\n- Muscles: ${m.muscles}\n- Type: ${HOLDS.has(m.slug)?'isometric hold':'dynamic reps'}\n- Weighted: ${m.weighted?'yes — '+m.weightHow:'no'}\n- How to: ${m.how}\n- Sets/reps: ${p.scheme}, rest ${p.rest}, ${p.freq}. Level-up goal: ${p.goal}.\n- Easier: ${m.easier?by[m.easier].name:'—'}\n- Harder: ${m.harder?by[m.harder].name:'—'}\n- Common mistakes: ${MIST[m.cat].join(' ')}\n`}).join('\n'));
+write('/favicon.svg',`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#ffe14d" stroke="#111" stroke-width="5"/><text x="32" y="46" font-family="Impact" font-size="38" text-anchor="middle" fill="#ff3b3b" stroke="#111" stroke-width="2">C!</text></svg>`);
+write('/404.html',page({title:'Not found | Calisthenics Comics',desc:'Page not found',url:'/404',body:'<section class="hero-copy"><h1>KA-BOOM! 404</h1><p>That move fell off the bar. <a href="/">Back to the library</a>.</p></section>'}));
+for(const f of['style.css','app.js','site.js'])fs.copyFileSync(f,out+'/'+f);
 fs.copyFileSync('node_modules/fuse.js/dist/fuse.min.mjs',out+'/fuse.mjs');
-console.log('built',M.length);
+if(fs.existsSync('og'))fs.cpSync('og',out+'/og',{recursive:true});
 // prefix root-relative URLs with BASE for GitHub Pages subpath
-for(const f of require('child_process').execSync(`find ${out} -name '*.html'`).toString().trim().split('\n')){
- fs.writeFileSync(f,fs.readFileSync(f,'utf8').replace(/(href|src)="\/(?!\/)/g,`$1="${BASE}/`));}
+for(const f of require('child_process').execSync(`find ${out} -name '*.html'`).toString().trim().split('\n'))fs.writeFileSync(f,fs.readFileSync(f,'utf8').replace(/(href|src)="\/(?!\/)/g,`$1="${BASE}/`));
 fs.writeFileSync(out+'/app.js',fs.readFileSync(out+'/app.js','utf8').replace("'/fuse.mjs'",`'${BASE}/fuse.mjs'`));
 fs.writeFileSync(out+'/.nojekyll','');
+module.exports={M,CAT};
+console.log('built',M.length,'moves,',urls.length,'urls');

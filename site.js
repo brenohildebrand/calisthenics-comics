@@ -1,0 +1,1 @@
+document.querySelectorAll('form.nlform[data-pending]').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();const m=f.parentElement.querySelector('.nlmsg');m.textContent="Signups open very soon — we're setting up the newsletter. Nothing was sent or stored.";}));
