@@ -1,5 +1,5 @@
 // Generates og/<slug>.png (1200x630). Run locally: node og.js (outputs are committed).
-const sharp=require('sharp'),fs=require('fs');const {art}=require('./art');
+const sharp=require('sharp'),fs=require('fs');const {art}=require('./art2');
 process.env.SKIP=1;const {M,CAT}=require('./build.js');
 fs.mkdirSync('og',{recursive:true});
 const esc=s=>s.replace(/&/g,'&amp;');
@@ -11,6 +11,6 @@ ${title.map((t,i)=>`<text x="640" y="${230+i*92}" font-family="Bangers" font-siz
 const wrap=s=>{const w=s.toUpperCase().split(' '),L=[''];for(const x of w){if((L.at(-1)+' '+x).trim().length>11&&L.at(-1))L.push(x);else L[L.length-1]=(L.at(-1)+' '+x).trim()}return L.slice(0,3)};
 (async()=>{for(const m of M){const a=art(m.slug,CAT[m.cat][1],m.name).replace('<svg ','<svg width="540" height="530" preserveAspectRatio="xMidYMid slice" ');
  await sharp(Buffer.from(frame(a,wrap(m.name),`LEVEL ${m.diff}/10 · ${m.tier.toUpperCase()}`,CAT[m.cat][1]))).png({compressionLevel:9,palette:true}).toFile(`og/${m.slug}.png`)}
- const h=fs.readFileSync('hero.svg','utf8').replace('<svg ','<svg xmlns="http://www.w3.org/2000/svg" width="540" height="530" preserveAspectRatio="xMidYMid slice" ');
+ const h=fs.readFileSync('art/hero.svg','utf8').replace('<svg ','<svg width="540" height="530" preserveAspectRatio="xMidYMid slice" ');
  await sharp(Buffer.from(frame(h,['EVERY MOVE.','RANKED 1–10'],`${M.length} CALISTHENICS MOVES`,'#ff3b3b'))).png({compressionLevel:9,palette:true}).toFile('og/home.png');
  console.log('og done')})();

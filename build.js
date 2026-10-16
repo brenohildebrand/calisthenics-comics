@@ -1,5 +1,5 @@
 const fs=require('fs');
-const {art}=require('./art');const CFG=require('./config');
+const {art}=require('./art2');const CFG=require('./config');
 const BASE='/calisthenics-comics',SITE='https://brenohildebrand.github.io'+BASE,TODAY=new Date().toISOString().slice(0,10);
 const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
@@ -32,7 +32,7 @@ const page=({title,desc,url,body,ld,og})=>`<!doctype html><html lang="en"><head>
 const ad=(label,size)=>`<aside class="ad" aria-label="Sponsor placeholder"><span>SPONSOR SLOT · ${label}</span><small>${size} · your brand here</small></aside>`;
 const bar=d=>`<div class="power" role="img" aria-label="Difficulty ${d} of 10">${Array.from({length:10},(_,i)=>`<i class="${i<d?'on':''}"></i>`).join('')}</div>`;
 const badge=m=>`<span class="lvl t-${m.tier.toLowerCase()}">LV ${m.diff} · ${m.tier}</span>`;
-const pic=(m,sfx='')=>art(m.slug,CAT[m.cat][1],m.name,{idSuffix:sfx});
+const pic=(m,sfx='',eager=false)=>`<picture><source type="image/webp" srcset="/art/${m.slug}.webp"><img src="/art/${m.slug}.svg" width="560" height="493" ${eager?'fetchpriority="high"':'loading="lazy"'} decoding="async" alt="Comic illustration of Captain Rep performing the ${esc(m.name)}"></picture>`;
 const card=(m,sfx='')=>`<a class="card" href="/m/${m.slug}/" data-slug="${m.slug}" style="--c:${CAT[m.cat][1]}"><div class="art">${pic(m,sfx)}</div><div class="bubble"><h3>${esc(m.name)}</h3><p class="mus">${esc(m.muscles)}</p>${bar(m.diff)}<div class="tags">${badge(m)}<span class="tag">${CAT[m.cat][0]}</span>${m.weighted?'<span class="tag w">⚖ Weighted</span>':''}</div></div></a>`;
 const faqHTML=f=>`<section class="faq"><h2>FAQ</h2>${f.map(([q,a])=>`<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</section>`;
 const faqLD=f=>({'@context':'https://schema.org','@type':'FAQPage',mainEntity:f.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))});
@@ -40,7 +40,7 @@ const crumbLD=items=>({'@context':'https://schema.org','@type':'BreadcrumbList',
 
 const out='dist';fs.rmSync(out,{recursive:true,force:true});fs.mkdirSync(out,{recursive:true});
 const write=(p,s)=>{fs.mkdirSync(require('path').dirname(out+p),{recursive:true});fs.writeFileSync(out+p,s)};
-const hero=fs.readFileSync('hero.svg','utf8');
+const hero=`<picture class="hero-art"><source type="image/webp" srcset="/art/hero.webp"><img src="/art/hero.svg" width="800" height="380" fetchpriority="high" alt="Comic hero panel: Captain Rep, the Calisthenics Comics mascot, blasting through a muscle-up with a POW burst"></picture>`;
 const tiersHTML=[['Rookie','1–2'],['Brawler','3–4'],['Hero','5–6'],['Champion','7–8'],['Titan','9'],['Legend','10']].map(([t,r])=>`<li class="lvl t-${t.toLowerCase()}">${t}<small>LV ${r}</small></li>`).join('');
 const homeFaq=[['What is calisthenics?','Calisthenics is strength training using your own bodyweight — push-ups, pull-ups, squats, levers, handstands and more. Many moves can also be loaded with a vest or dip belt.'],['How are difficulty levels decided?',`Every move is rated 1–10 by the strength, skill and prerequisites it needs, grouped into six XP tiers from Rookie to Legend. There are ${M.length} movements in the library.`],['Where should a beginner start?','Start with Level 1–2 Rookie moves: wall push-ups, dead hangs, bodyweight squats, plank and glute bridges. Each move page links to its easier and harder progression.'],['Can you build muscle with calisthenics?','Yes. Progress by moving to harder variations or adding load (weighted vest or dip belt) once you hit the target reps.']];
 write('/index.html',page({title:'Calisthenics Comics — Every bodyweight movement, ranked 1–10',desc:`Comic-style encyclopedia of ${M.length} calisthenics movements with difficulty levels, weighted options, sets & reps and progressions.`,url:'/',ld:[{'@context':'https://schema.org','@type':'WebSite',name:'Calisthenics Comics',url:SITE+'/'},faqLD(homeFaq)],body:`<section class="hero"><div class="hero-copy"><h1>Every Calisthenics Move.<br><span>Comic-Book Powered.</span></h1><p>${M.length} bodyweight movements ranked from Level 1 to 10. Find your next power-up, check what can be loaded, and follow the progression path from Rookie to Legend.</p><a class="btn" href="#library">Start the quest ↓</a></div>${hero}</section>
@@ -59,7 +59,7 @@ ${ad('Footer banner','970×250')}${faqHTML(homeFaq)}
 
 for(const c of Object.keys(CAT)){const list=M.filter(m=>m.cat==c).sort((a,b)=>a.diff-b.diff);
  write(`/c/${c}/index.html`,page({title:`${CAT[c][0]} Calisthenics Exercises — ${list.length} moves ranked 1–10 | Calisthenics Comics`,desc:CAT[c][2],url:`/c/${c}/`,og:'home',ld:[crumbLD([['Home','/'],[CAT[c][0],`/c/${c}/`]]),{'@context':'https://schema.org','@type':'ItemList',itemListElement:list.map((m,i)=>({'@type':'ListItem',position:i+1,url:`${SITE}/m/${m.slug}/`,name:m.name}))}],
- body:`<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › ${CAT[c][0]}</nav><section class="hub" style="--c:${CAT[c][1]}"><h1>${CAT[c][0]} Moves</h1><p class="lead">${CAT[c][2]} ${list.length} movements, easiest first.</p></section><div class="grid">${list.map(m=>card(m)).join('')}</div>${ad('Category banner','728×90')}`}));}
+ body:`<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › ${CAT[c][0]}</nav><section class="hub" style="--c:${CAT[c][1]}"><div><h1>${CAT[c][0]} Moves</h1><p class="lead">${CAT[c][2]} ${list.length} movements, easiest first.</p></div><picture class="catart"><source type="image/webp" srcset="/art/cat-${c}.webp"><img src="/art/cat-${c}.svg" width="600" height="300" alt="Captain Rep in a signature ${CAT[c][0].toLowerCase()} pose"></picture></section><div class="grid">${list.map(m=>card(m)).join('')}</div>${ad('Category banner','728×90')}`}));}
 
 for(const m of M){const p=plan(m),f=faq(m),ch=chain(m),c=CAT[m.cat];
  const link=(s,l)=>s?`<a class="prog" href="/m/${s}/"><small>${l}</small>${esc(by[s].name)} <em>LV ${by[s].diff}</em></a>`:`<span class="prog none"><small>${l}</small>${l=='Harder'?'You reached the top! 🏆':'Starting point'}</span>`;
@@ -67,7 +67,7 @@ for(const m of M){const p=plan(m),f=faq(m),ch=chain(m),c=CAT[m.cat];
  const sameLv=M.filter(x=>x.cat!=m.cat&&Math.abs(x.diff-m.diff)<=0).slice(0,6);
  const mist=[...c[0]&&MIST[m.cat]];if(m.weighted)mist.push(`Adding weight before you can do ${p.goal.toLowerCase()} with perfect form.`);
  const body=`<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/c/${m.cat}/">${c[0]}</a> › ${esc(m.name)}</nav>
-<article class="detail" style="--c:${c[1]}"><div class="panel">${pic(m,'d')}</div><div class="info"><h1>${esc(m.name)}</h1>${badge(m)}${bar(m.diff)}
+<article class="detail" style="--c:${c[1]}"><div class="panel">${pic(m,'d',true)}<span class="cap">PANEL 1 · ${esc(m.name.toUpperCase())}</span></div><div class="info"><h1>${esc(m.name)}</h1>${badge(m)}${bar(m.diff)}
 <div class="bubble big"><h2>How to</h2><p>${esc(m.how)}</p></div>
 <dl><dt>Category</dt><dd><a href="/c/${m.cat}/">${c[0]}</a></dd><dt>Muscles</dt><dd>${esc(m.muscles)}</dd><dt>Weighted?</dt><dd>${m.weighted?'Yes — '+esc(m.weightHow):'No — bodyweight only'}</dd><dt>Type</dt><dd>${HOLDS.has(m.slug)?'Isometric hold':'Dynamic reps'}</dd></dl>
 <div class="progs">${link(m.easier,'Easier')}${link(m.harder,'Harder')}</div></div></article>
@@ -91,9 +91,9 @@ write('/favicon.svg',`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64
 write('/404.html',page({title:'Not found | Calisthenics Comics',desc:'Page not found',url:'/404',body:'<section class="hero-copy"><h1>KA-BOOM! 404</h1><p>That move fell off the bar. <a href="/">Back to the library</a>.</p></section>'}));
 for(const f of['style.css','app.js','site.js'])fs.copyFileSync(f,out+'/'+f);
 fs.copyFileSync('node_modules/fuse.js/dist/fuse.min.mjs',out+'/fuse.mjs');
-if(fs.existsSync('og'))fs.cpSync('og',out+'/og',{recursive:true});
+fs.cpSync('art',out+'/art',{recursive:true});if(fs.existsSync('og'))fs.cpSync('og',out+'/og',{recursive:true});
 // prefix root-relative URLs with BASE for GitHub Pages subpath
-for(const f of require('child_process').execSync(`find ${out} -name '*.html'`).toString().trim().split('\n'))fs.writeFileSync(f,fs.readFileSync(f,'utf8').replace(/(href|src)="\/(?!\/)/g,`$1="${BASE}/`));
+for(const f of require('child_process').execSync(`find ${out} -name '*.html'`).toString().trim().split('\n'))fs.writeFileSync(f,fs.readFileSync(f,'utf8').replace(/(href|src|srcset)="\/(?!\/)/g,`$1="${BASE}/`));
 fs.writeFileSync(out+'/app.js',fs.readFileSync(out+'/app.js','utf8').replace("'/fuse.mjs'",`'${BASE}/fuse.mjs'`));
 fs.writeFileSync(out+'/.nojekyll','');
 module.exports={M,CAT};
