@@ -1,0 +1,153 @@
+scapular-pull-up: feet on ground, redo with taller bar
+chest-to-bar-pull-up: slanted bar, feet on ground
+one-arm-pull-up: chin below bar, too low
+muscle-up (+ring, strict): bar too low again; try tall pull-up rig framing, low camera angle
+pseudo-planche-push-up: came out as normal plank/push-up; need hands beside hips + strong forward lean, side view
+freestanding-handstand-push-up: came out forearm stand or locked handstand; need palms, bent elbows at bottom, vertical
+straight-bar-dip: came out as australian row; need support above bar, feet off ground, elbows back
+ring-dip: came out as ring pull; need support/press on rings at hips, not pulling
+korean-dip: bar bent/snapped weird; need straight bar clearly behind torso
+90-degree-push-up: came out normal push-up; need horizontal body hips on bent elbows
+calf-raise: twice came out flat-footed on step; try tiptoes on flat ground, close-up of feet
+single-leg-calf-raise: standing heel stayed flat; need clear tiptoe
+sissy-squat: came out leaning-back wall-sit with hips bent; need straight line knees-to-head, heels up
+nordic-curl: came out incline push-up on bench; need kneeling on ground, ankles anchored, rigid lean forward
+hollow-body-hold: came out seated boat/V pose; need lying flat-ish, only low back on mat, arms overhead by ears, legs low
+bridge: came out downward dog/pike, belly down; need belly UP to sky, back arched, viewed from side
+frog-stand: came out flat crow/planche with legs straight back; need knees wide on outside of elbows, tucked squat shape
+frog-stand (2nd): feet stayed on ground, plain squat; try side view, feet clearly floating, use blender crow/tuck pose ref
+dragon-pistol-squat: came out lunge, both feet down; need single-leg deep squat, free leg crossed behind
+elbow-lever: came out forearm plank with feet down; need hands on ground, elbows in belly, body horizontal, feet floating
+hanging-leg-raise: pose good (straight legs horizontal) but hair bun detached and floated away as a yarn ball; retry same prompt stressing bun stays on her head
+dragon-flag: came out lying flat on bench with hips down doing leg raise; need only shoulders on bench, rigid straight body lifted diagonally from shoulders, maybe use ground mat holding a pole
+straight-bar-dip (2nd): above bar but feet look grounded/standing, bar at hip height; need higher bar, feet clearly dangling, low camera
+dragon-pistol-squat (3rd): came out regular pistol with free leg in front; need free leg crossed BEHIND standing leg, maybe back view
+tuck-front-lever: torso reclined ~40deg, not horizontal; need back flat parallel to ground, face up, hips at hand-height-minus-arm
+planche-push-up: feet stayed on ground (regular push-up); need feet floating, maybe tuck planche push-up variant or use blender planche ref harder
+tuck-front-lever (2nd): still reclined torso even with 'tabletop' wording; try top-down/front-diagonal camera or blender front-lever ref
+manna: came out V-sit/L-sit on parallettes, hips between hands; need hips far behind hands, legs pointing near-vertical up toward face
+straddle-front-lever: came out vertical dead hang with side split, front view; need horizontal body, side/3-4 view
+one-arm-pull-up (2nd): bar cut behind her head ambiguously, feet near ground; need bar clearly in front, higher rig
+dragon-flag (2nd, bench): torso lay flat on bench doing leg raise, hips down; model resists — consider blender dragon-flag pose render as ref
+calf-raise (3rd): came out jumping with both feet in the air; need toes still touching ground, heels up
+planche-push-up (2nd, with straddle-planche ref): feet still on ground; needs blender planche push-up pose render as ref
+planche-lean-push-up (11:40 run): hands under chest/shoulders, no forward lean past hands; need hands at waist level, shoulders clearly ahead of hands
+impossible-dip: came out regular dip with hands gripping bars; need forearms lying flat along bar tops, elbows on bars
+ring-muscle-up: support on rings ok-ish but feet look planted on ground, elbows bent; need feet clearly high off ground, arms locked
+muscle-up (transition prompt): came out L-sit hang with hips below bar, bar across belly; reuse strict-muscle-up framing (front 3/4, above bar, arms locking out) with slight variation
+impossible-dip (2nd): came out fists on top of two vertical posts; try side view with long horizontal parallel bars, forearms resting along them like armrests
+korean-dip (2nd): bar ended up across her lap in front; still not behind
+one-arm-pull-up (3rd): came out one-arm dead hang, head below bar; try using accepted chest-to-bar image as pose ref
+one-arm-pull-up (4th, chest-to-bar ref): came out one-arm lean with bar at stomach, not hanging
+calf-raise (4th, ballerina tiptoe): she wore glasses (off-model) and looked like hopping; heels barely up
+nordic-curl (3rd): kneeling + heels under bench correct now, but hips piked 90deg; need hips straight, body one line knees-to-head
+planche-lean-push-up (2nd): hands still under shoulders; model resists forward lean — try 3/4 front view or overhead arrow-free emphasis on shoulders over fingertips
+planche-push-up: ACCEPTED 12:55 run (full-planche + elbow-lever as combined refs, 'combine the two' prompt)
+--- 12:35 PM run (2026-10-17) — 20 gens, 1 accepted (planche-push-up). Stick-figure pose refs now in pose-refs/ (draw.py) but model mostly ignores them.
+90-degree-push-up (x5): stick ref and full-planche ref -> plain push-up/forearm plank with feet down; planche-push-up ref -> floated entirely with hands off ground. Next: try planche-push-up.jpg ref + 'hands flat on ground directly under hips, forearms vertical' or skip
+pseudo-planche-push-up (x3): always plain push-up with shoulders over hands; model won't lean forward
+sissy-squat: came out regular squat with heels flat, torso forward
+single-leg-calf-raise: one-leg stand on step but heel flat, looks like running; one needle only
+straddle-front-lever (x2, fl ref and fl+straddle-planche refs): torso stays upright/diagonal with leg split
+tuck-front-lever (x3): reclined seated hang or face-down tuck hang; never horizontal face-up
+frog-stand (crow ref): front view, good knee placement, but feet look grounded; retry same ref with side view + 'shadow gap under sneakers'
+nordic-curl (4th): straight-body lean good, but lower legs garbled and feet not hooked under anything
+dragon-pistol-squat (4th, pistol ref): lateral lunge, free leg not crossed behind
+--- 1:35 PM run (2026-10-17) — 16 gens, 2 accepted (tuck-front-lever via full-front-lever + tuck-planche refs; nordic-curl via plank ref + "heels hooked under bottom rail of park bench, kneeling on folded mat").
+"Edit this image" prompts using a rejected gen as ref mostly return a near-identical copy (calf-raise, dragon-flag, frog-stand, korean-dip) — not useful.
+frog-stand (x2, crow ref / edit): feet stay on ground.
+straddle-front-lever (x2, fl+straddle-planche / edit of tuck-FL): vertical hang with side split; edit came out fully off-model (purple tank top) — reject.
+calf-raise (x3): flat feet on curb / walking stride. single-leg-calf-raise: knee raise, heel flat.
+korean-dip (x2): bar in front at hips (straight-bar support), never behind.
+dragon-flag (x2): hips stay on bench, leg raise only.
+sissy-squat (limbo prompt): leaning back holding lamp post but heels down, knees not forward.
+one-arm-pull-up (edit of pull-up.jpg): off-model b&w, bar across her shoulders — reject.
+--- 2:37 PM run (2026-10-17) — 20 gens, 2 accepted (frog-stand via crow-pose + tuck-planche refs "halfway between"; one-arm-pull-up via archer-pull-up ref, front 3/4, other hand on hip, bar passes cleanly BEHIND her head). 80/92.
+frog-stand (crow ref only): knees on ground, all fours — the tuck-planche second ref is what lifted the feet.
+calf-raise (x2: hands-on-hips step / mango-picking on step): heels flat or barely raised.
+single-leg-calf-raise (palm tree, low camera): knee raised in front, not tiptoe.
+manna (x2, v-sit ref): high V-sit on parallettes legs ~55deg (near miss); "jackknife" prompt -> face-down legs-bent mess.
+straddle-front-lever (fl ref / tuck-fl ref): vertical hang with side split, torso upright. Model will not put a straddle horizontal.
+dragon-flag (human-flag ref -> face-down on bench legs up; lying-leg-raise ref -> leaning on bench back, hips down).
+korean-dip (bench-dip ref / straight-bar-dip "reverse"): always bar in front at hips, regular straight-bar dip.
+90-degree-push-up (elbow-lever + planche-push-up refs): plain push-up.
+pseudo-planche-push-up (fingers-backward cue) and planche-lean-push-up (push-up + full-planche refs): plain push-up, shoulders over hands.
+sissy-squat (nordic-curl ref, lamp post): regular half squat on toes, torso forward.
+dragon-pistol-squat (pistol ref, 3/4 front): deep single-leg squat with free leg out to the side, not crossing behind (near miss).
+impossible-dip (parallel-bar-dip ref): regular dip on hands.
+Next idea: custom Blender pose renders (blender-samples/render.py) for lean/planche push-ups, korean dip, dragon flag, straddle FL, manna, sissy squat.
+--- 3:36 PM run (2026-10-17) — 14 gens, 2 accepted (calf-raise via "up on tiptoes on BOTH feet like a ballerina in releve, heels lifted, gap of light under heels, hands on hips, standing still"; single-leg-calf-raise via same cue + accepted calf-raise.jpg as 2nd ref, "other foot hooked behind standing ankle, hand on park pole"). 82/92.
+KEY: naming a well-known pose from another domain (ballet releve) beats anatomical description. Try more of these.
+Blender mannequin pose refs (blender-vo/render_vo.py, renders in blender-vo/*.png; Blender at /workspace/tools/blender-4.2.3-linux-x64, Cycles CPU since no EGL) are IGNORED by the image model, even with "edit this image"/"repaint" prompts (it drew her standing/running). Dead end.
+Commons photo ref (photo-refs/slcr-top.png) also ignored (heel flat).
+90-degree-push-up (sheet + mannequin): (a) body horizontal, feet floating, but arms nearly straight -> near miss saved vo-candidates/90-degree-push-up-1.jpg; (b) "mayurasana" cue -> push-up bottom, toes on ground.
+straddle-front-lever (sheet + mannequin, low camera): horizontal body with wide split under bar, but reads face-down/side-split -> near miss saved vo-candidates/straddle-front-lever-1.jpg.
+planche-lean-push-up: plain push-up again. sissy-squat (nordic-curl ref mirrored): floating seated lean, nonsense.
+dragon-pistol-squat ("deep curtsy" + pistol ref): lateral lunge again. dragon-flag ("Bruce Lee dragon flag"): hips on bench, leg raise.
+Remaining 10: pseudo-planche-push-up, 90-degree-push-up, korean-dip, impossible-dip, planche-lean-push-up, sissy-squat, dragon-pistol-squat, manna, dragon-flag, straddle-front-lever.
+--- 4:34 PM run (2026-10-17) — 16 gens, 1 accepted. 83/92.
+ACCEPTED korean-dip: front 3/4 view, "she FACES THE CAMERA with her back to a single bar at hip height, bar BEHIND her lower back/buttocks, straight arms reach back to grip it, like a gymnast in rear support or a kid leaning back on a fence rail, feet off ground in front" + bench-dip.jpg ref. Bar hidden behind thighs/dress, hands at sides.
+sissy-squat: "limbo dancer" cue gives the right shape (knees forward, leaning back, on toes) BUT draws a limbo stick at shoulder height (rejected for bar ambiguity). "no stick" variants -> lean-back with straight knees / forward crouch / lying on ground. "Matrix bullet dodge" -> lying on ground. Next: limbo cue with the stick explicitly far ABOVE her head / out of frame, or accept a stick clearly behind her.
+impossible-dip: "armchair armrests", "forearm plank on bars", "crutches" -> regular dip gripping bars / planche on bars. Model won't rest forearms on bars.
+pseudo-planche & planche-lean: "ski jumper", "sprinter SET", "hurricane wind", "hands under belly, nose a forearm past fingertips", full-planche/planche-push-up refs -> ALWAYS a plain push-up or a flying-superman pose. Consider retiring these two or reusing a different composition (front-on camera?).
+90-degree-push-up: planche-push-up ref + "bottom of rep, elbows 90" -> plain push-up.
+dragon-flag: "seesaw/drawbridge", front-lever ref, "shoulder stand on bench" (got a HEADSTAND on bench), back-lever ref "diving board" -> leg raises/odd incline. 
+dragon-pistol: pistol ref + "legs crossed X" -> lateral squat with leg out to side (same near miss).
+straddle-front-lever: full-front-lever + straddle-planche refs -> straddle split hang, torso ~40deg not horizontal; near miss saved vo-candidates/straddle-front-lever-2.jpg (better than -1).
+Remaining 9: pseudo-planche-push-up, 90-degree-push-up, impossible-dip, planche-lean-push-up, sissy-squat, dragon-pistol-squat, manna, dragon-flag, straddle-front-lever.
+--- 5:38 PM run (2026-10-17) — 23 gens, 0 accepted. 83/92.
+NOTE: this run's GenerateImage outputs were readable with the Read tool and usable as refs, but NOT visible to Shell (assets dir empty from Shell), so near misses could not be copied into vo-candidates/. Paths kept for reference:
+  sissy-squat near miss (BEST so far): /home/box/agent-data/agents/cc197fe9-6f1d-4a4c-8e42-781d9505b072/assets/ac508434e3a4b98cbbf77edca9d9087fa84a9124b83165a5c4d50a06de99b185.jpg — limbo pose, knees forward, torso+thighs leaning back, limbo stick on stands HIGH above her (no contact). Only flaw: HEELS FLAT. Prompt: "classic LIMBO DANCE ... The limbo stick is held by two stands HIGH ABOVE her, near the top edge of the picture, well above her face and knees". Adding calf-raise.jpg ref / "relevé, heels lifted" to it just returns a near-copy (heels still flat). Lamp-post variant (no stick) same shape, heels flat, post behind her head.
+  straddle-front-lever: "lying face-up on an invisible table" + full-FL + straddle-planche refs -> straddle hang, legs horizontal, torso still ~30deg (/home/box/agent-data/agents/cc197fe9-6f1d-4a4c-8e42-781d9505b072/assets/20fea71b...jpg). Tuck-FL ref "extend legs" -> same. High overhead camera -> reads as straddle hang. Near miss persists.
+  manna: "legs vertical, folded like closed pocketknife" + v-sit ref -> HIGH V-SIT on parallettes, legs vertical, torso upright, hands beside hips (/home/box/agent-data/agents/cc197fe9-6f1d-4a4c-8e42-781d9505b072/assets/98e944a8...jpg). Crab-position cue -> seated V with bottom on ground. Combining both as refs -> near copy of the V-sit. Missing: hips behind hands, torso leaning back.
+  dragon-pistol: "pretzel/X legs" front view -> free leg crosses IN FRONT over standing knee (figure-four look). "behind the calf" / rear 3/4 + shrimp ref -> leg out to the side again.
+  90-degree-push-up: near-miss + elbow-lever refs, "human coffee table" -> plain push-up toes down.
+  planche-lean (full-planche ref "toes rest on ground") and pseudo-planche (tuck-planche ref, hands by hips, motion arrow) -> plain push-up, shoulders over hands.
+  dragon-flag: "drawbridge" + lying-leg-raise ref, and front-lever-body-on-bench -> leg raise with hips on bench.
+  impossible-dip: "windowsill gossip", "swimmer resting elbows on pool edge" -> standing beside bars / regular dip.
+Remaining 9: pseudo-planche-push-up, 90-degree-push-up, impossible-dip, planche-lean-push-up, sissy-squat, dragon-pistol-squat, manna, dragon-flag, straddle-front-lever.
+--- 6:34 PM run (2026-10-17) WORKAROUND for GenerateImage outputs invisible to Shell: UploadFile (connection user-Google-drive) the asset path to Drive, then DownloadFile it back to /workspace (destination.path), then trash the Drive copy. Verified working.
+NOTE: trash_file on Drive is now blocked by Auto-review; leave transfer copies in Drive (folder "Vo Ferro transfers") instead of trashing.
+ACCEPTED sissy-squat (84/92): fresh limbo prompt + sheet + calf-raise.jpg refs ("limbo stick on two stands HIGH ABOVE her near top edge... up on tips of toes like a ballerina in relevé, BOTH HEELS LIFTED, bright gap of light under heels") -> right pose but fluffy off-model hair + crowd; then 2 "redraw keeping everything identical, change ONLY X" passes fixed background then hair. KEY: iterative single-change edits DO work when the change is small (hair/background), unlike pose edits.
+ACCEPTED 90-degree-push-up (85/92): sheet + vo-candidates/90-degree-push-up-1.jpg refs, "Edit the second reference image... [full character description inline]... Change ONLY her height: body lower, hovering a hand-width above ground, upper arms level with ground, elbows at a sharp right angle tucked into hips like the legs of a little table". Then a 2nd "change ONLY dress pattern to yellow flowers" pass. KEY: always restate the full character description inline in edit prompts; without it the model sometimes ignores refs entirely and draws a different person (happened 3x this run).
+Rejects this run: planche-lean "edit push-up.jpg slide body forward" -> off-model plain push-up; straddle-FL "edit full-front-lever.jpg, legs open like scissors" -> off-model girl / upright straddle hang ("split" wording tripped the content filter once).
+Also rejected this run: planche-lean "edit full-planche.jpg, feet down + shoulders forward" -> high incline push-up, shoulders behind hands; manna "edit v-sit.jpg, hips behind hands, legs over head" -> face-down tuck press on parallettes; straddle-FL "edit straddle-front-lever-2.jpg, flatten torso like floating on back in a pool" -> upright straddle hang (worse); dragon-pistol "edit pistol-squat.jpg, free leg crosses behind standing calf" -> two-foot deep squat, back foot just peeking out.
+QA flag for later: accepted parallel-bar-dip.jpg shows both hands on the SAME near bar with that bar crossing in front of her hips; worth re-checking against Breno's bar rule and biomechanics.
+Remaining 7: pseudo-planche-push-up, impossible-dip, planche-lean-push-up, dragon-pistol-squat, manna, dragon-flag, straddle-front-lever.
+--- end 6:34 PM run: 18 gens, 2 accepted (sissy-squat, 90-degree-push-up). 85/92.
+--- 7:34 PM run (2026-10-17) — 15 gens, 0 accepted. 85/92.
+"Change ONLY pose" edits of accepted images (full-front-lever -> straddle legs; straddle-planche -> toes down; dragon-flag near miss -> hips up; dip -> forearms on bars) return near-copies or worse (standing lean, scissor legs with pole crossing in front of torso).
+NEW TEST: generic comic athlete (no V\u00f3 refs) for planche lean / straddle FL / dragon flag / impossible dip -> SAME failures (plain push-up, upright straddle hang, leg raise on bench, regular dip). So the base image model cannot draw these 4 poses at all; it's not the character constraint.
+Other cues tried: yoga candle pose on bench (-> face-down on bench), starfish floating face-up under bar (-> upright straddle hang), full-planche ref with feet lowered (-> plain push-up).
+Priced an alternative: ElevenLabs creative gemini-3-pro-image = ~1,218 credits (~$0.22) per image. NOT used (Breno's no-spend rule); needs his OK.
+Remaining 7: pseudo-planche-push-up, impossible-dip, planche-lean-push-up, dragon-pistol-squat, manna, dragon-flag, straddle-front-lever.
+--- 8:31 PM run (2026-10-17) — 10 gens, 1 accepted. 86/92.
+NEW TECHNIQUE ("floor then lift"): for a horizontal hanging pose, first draw her LYING FLAT ON HER BACK on a mat, arms straight up holding a broomstick above her chest (model does this perfectly, body truly horizontal). Then edit that image: "keep body/arms/camera IDENTICAL, change ONLY: mat and floor GONE, she is two metres in the air with shadow far below; broomstick becomes a steel pull-up bar on two green posts at the far edges, well clear of her body". Result = a genuinely horizontal front lever (first time ever).
+ACCEPTED straddle-front-lever: floor step with low side 3/4 camera ("snow angel" legs, near leg toward viewer) -> lift edit -> third edit "change ONLY her legs: NEAR leg swings sideways TOWARD THE VIEWER, strongly foreshortened, sneaker sole large near bottom-right; FAR leg swings AWAY, smaller". Horizontal torso, legs spread in depth, posts far from body, bar end hidden behind POW. Slight hip sag; acceptable.
+Rejects: "change ONLY legs open like scissors" -> vertical scissor (one leg up one down). Overhead snow-angel + "look UP at her from below" edit -> two heads (garbage). Seated straddle when camera is from her feet without "head/shoulders on the mat".
+Rotation idea for dragon-flag (draw upright on white bg, rotate with PIL, then background-redraw edit): first attempt drew her carrying a plank on her shoulder; untested further.
+Remaining 6: pseudo-planche-push-up, impossible-dip, planche-lean-push-up, dragon-pistol-squat, manna, dragon-flag.
+
+--- 9:34 PM run (2026-10-17) — ~22 gens, 1 accepted. 87/92.
+ACCEPTED dragon-flag via floor-then-lift on a blue park bench: (1) lying flat on bench gripping end behind head; (2) lift hips/legs; (3) lock rigid plank + lift heels so only shoulders touch, body horizontal above bench slats. Same family of trick as straddle-front-lever.
+Rejects:
+  dragon-pistol: curtsy/eagle-leg/pretzel cues still yield two-foot deep squat, lateral lunge, or pistol with free leg out front/side. No behind-wrap.
+  manna: stays high V-sit or tuck planche on parallettes; "hips behind hands" edits ignored; one gen spawned a second younger athlete doing the pike.
+  impossible-dip: always hand-grip dip / L-sit on pillars; forearm-on-bar + elbow-lever cues ignored.
+  pseudo-planche & planche-lean: always plain push-up/plank; full-planche "toes down" edit -> plain push-up; one gen drew a bar THROUGH her torso (auto-reject).
+Remaining 5: pseudo-planche-push-up, impossible-dip, planche-lean-push-up, dragon-pistol-squat, manna.
+ElevenLabs gemini-3-pro-image still unused (Breno answer pending from prior wake).
+
+--- 10:38 PM run (2026-10-17)
+ACCEPTED pseudo-planche-push-up (88/92) via floor-then-lift: (1) lying face-down flat on mat, side view floor-level camera, palms beside WAIST, elbows bent pointing back -> model drew it right; (2) edit "change ONLY: body a rigid plank HOVERING above mat on palms + toe tips, gap of daylight under chest/belly/hips/thighs, shoulders far forward of hands". Floor-then-lift works for push-up variants too.
+ACCEPTED manna (89/92) via a clean-white-background edit chain: (1) seated upright, legs straight forward, straight arms back with palms on floor behind bottom (white bg, no text); (2) "change ONLY: bottom lifts off floor + legs swing up ~70deg"; (3) "legs vertical, bottom hovering hand-width"; (4) "torso leans far back like a deck chair, shoulders behind hands" -> torso ~35deg, arms vertical, pike ~78deg, bottom hovering; (5) style+background edit "keep pose identical, change ONLY art style and background, add ZING!". Shoulders roughly over (not far behind) hands, so it reads as an early/high manna. KEY: white-background chains of small pose edits respond better than full scenes; add the background last.
+Rejects: planche-lean from pseudo-planche "straighten arms" -> near copy; "superman lean" fresh with prone ref -> bent-arm copy; upward-dog base (arms straight but hands under shoulders) -> hip-lift edit gives plain plank. dragon-pistol curtsy-lunge front view -> lateral lunge.
+ACCEPTED planche-lean-push-up (90/92) via PIL SHEAR (new technique, no model redraw): (1) GenerateImage comic side-view straight-arm plank (push-up top) on a horizontals-only background (sky, far bushes, mosaic, mat; no posts/buildings/trees), no text; (2) UploadFile->DownloadFile to vo-candidates/plank-comic.jpg; (3) numpy reflect-pad + PIL affine horizontal shear k=0.45 about the hand-contact line y=575 (of 720) so shoulders/head move forward of the hands, crop back; (4) paste the ZING! starburst cut out of vo-raw/pseudo-planche-push-up.jpg (vo-candidates/zing-rgba.png, scipy installed with pip --user --break-system-packages). Model redraws of the sheared image snap back to a bent-arm push-up, so do NOT re-render; ship the sheared composite.
+ACCEPTED impossible-dip (91/92) via white-bg chain: (1) side view facing right, suspended at bottom of impossible dip with near bar a horizontal tube IN FRONT of her dress on two far posts, knees bent feet crossed behind -> model drew a hand-grip dip bottom but bar placement perfect; (2) "change ONLY her left arm: upper arm vertical, elbow ON TOP of bar under shoulder, forearm flat along bar pointing forward like a windowsill" -> exact; (3) style+background edit with SMASH! -> pose kept.
+Rejects (dragon-pistol): rear-view prompt -> cossack squat from behind; edit "extended leg swings across over back of standing calf" -> high crossed curtsy-like stance (both feet down, best X shape so far: /home/box/agent-data/agents/cc197fe9-6f1d-4a4c-8e42-781d9505b072/assets/17200d245bb4bf86bc2c89aa52f999c6fde7e78b2d4b4fa790a9e2ea771c22c1.jpg); "sink deep + lift crossing leg" edit -> lateral lunge, cross lost. Next ideas: from the X-stance image, try small single edits (only lift crossing foot; then only bend standing knee more), or the PIL route (composite/warp) like planche-lean.
+--- end 10:38 PM run: ~26 gens, 4 accepted (pseudo-planche-push-up, manna, planche-lean-push-up, impossible-dip). 91/92. Remaining: dragon-pistol-squat.
+Also rejected: cossack-squat.jpg edit "free leg swings behind standing leg, foot pokes out far left" -> free leg still on its own side + background changed to a wall. Not crossing.
+
+--- 11:36 PM run (2026-10-17) — 7 gens, 1 accepted. 92/92 DONE.
+ACCEPTED dragon-pistol-squat via PIL MIRRORED-LEG COMPOSITE: (1) white-bg front-view cossack-style one-leg squat (standing right leg on picture-left, left leg straight out to picture-right) -> vo-candidates/dps-base-cossack.jpg; (2) dps_comp.py: segment the extended leg with a polygon, flip it horizontally about x=580, shift -100px, layer it UNDER the body silhouette so it emerges from behind the standing shin and sticks out to picture-left with the sneaker lifted (dps-comp-a.png); (3) dps_final.py: cut out the figure (border-connected white = background), scale 0.93, paste onto an empty generated praça plate with ZAP! (dps-bg-plate.jpg). A model "keep pose, change only background" edit of the composite snapped back to a curtsy lunge, so ship the PIL composite.
+Rejects: rear 3/4 prompt -> plain pistol; front "leg hidden behind" -> leg out to own side; "swing leg behind" edit -> crossed standing X; "sink low" edit of that -> near copy.

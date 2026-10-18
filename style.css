@@ -81,3 +81,8 @@ section>h2::before{content:"";position:absolute;left:-6px;bottom:4px;width:calc(
 .prog{transition:transform .12s,box-shadow .12s}.prog:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--c,var(--r))}
 @media(max-width:760px){.hub{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.card:hover{animation:none}.pow{animation:none;transform:translate(-50%,-50%)}}
+
+.meet{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;margin:36px 0;padding:22px;background:#fff;border:5px solid var(--ink);box-shadow:8px 8px 0 var(--ink)}
+.meet-art{display:block;border:4px solid var(--ink);transform:rotate(-1deg);overflow:hidden;background:#fff4cc}
+.meet-copy h2{margin-top:0}.meet-copy blockquote{margin:14px 0 0;font-weight:800}
+@media(max-width:760px){.meet{grid-template-columns:1fr}}

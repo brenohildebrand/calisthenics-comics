@@ -3,3 +3,10 @@ dist
 /*.png
 /*.webp
 blender-samples/
+vo-raw/
+vo-candidates/
+vo-staging/
+blender-vo/
+pose-refs/
+research/newsletter-001-draft.md
+research/vo-ferro-flag.jpg

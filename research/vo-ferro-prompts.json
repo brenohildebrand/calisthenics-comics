@@ -1,0 +1,554 @@
+[
+ {
+  "slug": "wall-push-up",
+  "name": "Wall Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"POW!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Wall Push-Up: Hands on a wall at shoulder height, body straight, bend elbows to bring chest to the wall, press back. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "POW!"
+ },
+ {
+  "slug": "incline-push-up",
+  "name": "Incline Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Incline Push-Up: Hands on a bench or box, body in a plank line, lower chest to the edge and press away. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BAM!"
+ },
+ {
+  "slug": "knee-push-up",
+  "name": "Knee Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZAP!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Knee Push-Up: From knees with hips extended, lower chest to the floor keeping elbows ~45° and press up. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZAP!"
+ },
+ {
+  "slug": "push-up",
+  "name": "Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"WHAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a push-up bottom: body in a straight plank line, elbows at about 45 degrees, chest just above the ground. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "WHAM!"
+ },
+ {
+  "slug": "diamond-push-up",
+  "name": "Diamond Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BOOM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Diamond Push-Up: Hands together forming a diamond under the sternum, elbows tucked, lower and press. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BOOM!"
+ },
+ {
+  "slug": "wide-push-up",
+  "name": "Wide Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"KRAK!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Wide Push-Up: Hands wider than shoulders, lower chest between hands, press up keeping a rigid body. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "KRAK!"
+ },
+ {
+  "slug": "decline-push-up",
+  "name": "Decline Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"SMASH!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Decline Push-Up: Feet elevated on a box, hands on floor, lower head forward of hands and press. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "SMASH!"
+ },
+ {
+  "slug": "pseudo-planche-push-up",
+  "name": "Pseudo Planche Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZING!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a pseudo planche push-up: hands beside the hips, shoulders leaning forward past the hands, toes on the floor, body straight. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZING!"
+ },
+ {
+  "slug": "archer-push-up",
+  "name": "Archer Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"POW!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Archer Push-Up: Very wide hands, shift to one side bending that arm while the other stays straight, alternate. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "POW!"
+ },
+ {
+  "slug": "one-arm-push-up",
+  "name": "One-Arm Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a One-Arm Push-Up: Feet wide, one hand under chest, other behind back, lower with control while resisting rotation. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BAM!"
+ },
+ {
+  "slug": "clap-push-up",
+  "name": "Clap Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZAP!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Clap Push-Up: Lower to the bottom, explode up so hands leave the floor, clap, land soft and repeat. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZAP!"
+ },
+ {
+  "slug": "superman-push-up",
+  "name": "Superman Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"WHAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Superman Push-Up: Explode so hard both hands and feet leave the ground, extend arms forward mid-air, land in a push-up. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "WHAM!"
+ },
+ {
+  "slug": "pike-push-up",
+  "name": "Pike Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BOOM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Pike Push-Up: Hips high in an inverted V, lower the head toward the floor in front of hands, press back up. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BOOM!"
+ },
+ {
+  "slug": "elevated-pike-push-up",
+  "name": "Elevated Pike Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"KRAK!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Elevated Pike Push-Up: Feet on a box, hips stacked over shoulders, lower head to floor forming a tripod, press. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "KRAK!"
+ },
+ {
+  "slug": "wall-handstand-push-up",
+  "name": "Wall Handstand Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"SMASH!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a wall handstand push-up bottom: upside down against a wall, head almost touching the floor between the hands, elbows bent. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "SMASH!"
+ },
+ {
+  "slug": "freestanding-handstand-push-up",
+  "name": "Freestanding Handstand Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZING!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a freestanding handstand push-up bottom: upside down with no wall, head near the floor, elbows bent forward, legs straight up. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZING!"
+ },
+ {
+  "slug": "90-degree-push-up",
+  "name": "90-Degree Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"POW!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a 90-degree push-up: body horizontal like a planche but with elbows bent 90 degrees, supporting the hips on her elbows. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "POW!"
+ },
+ {
+  "slug": "bench-dip",
+  "name": "Bench Dip",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Bench Dip: Hands on a bench behind you, legs out, bend elbows to ~90° and press up. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BAM!"
+ },
+ {
+  "slug": "parallel-bar-dip",
+  "name": "Parallel Bar Dip",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZAP!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Parallel Bar Dip: Support on bars, lean slightly forward, lower until shoulders drop below elbows, press up. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZAP!"
+ },
+ {
+  "slug": "straight-bar-dip",
+  "name": "Straight Bar Dip",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"WHAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Straight Bar Dip: Support above a single bar, lower chest toward the bar with elbows back, press out to lockout. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "WHAM!"
+ },
+ {
+  "slug": "ring-dip",
+  "name": "Ring Dip",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BOOM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Ring Dip: Support on turned-out rings, lower with rings close to the body, press back up turning out at top. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BOOM!"
+ },
+ {
+  "slug": "korean-dip",
+  "name": "Korean Dip",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"KRAK!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Korean Dip: Hold a bar behind you, lower your body down and press up, shoulders under heavy extension. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "KRAK!"
+ },
+ {
+  "slug": "impossible-dip",
+  "name": "Impossible Dip",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"SMASH!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Impossible Dip: On parallel bars, lower forearms onto the bars then press back up to straight arms without swinging. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "SMASH!"
+ },
+ {
+  "slug": "planche-lean-push-up",
+  "name": "Planche Lean Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZING!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a planche lean push-up: push-up position on toes, shoulders leaned far forward past the hands, fingers pointing slightly outward, body straight. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZING!"
+ },
+ {
+  "slug": "planche-push-up",
+  "name": "Planche Push-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"POW!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a planche push-up bottom position: body horizontal and straight, feet off the ground, elbows bent about 90 degrees close to the body, shoulders far forward of the hands. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "POW!"
+ },
+ {
+  "slug": "dead-hang",
+  "name": "Dead Hang",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a dead hang: hanging from a bar with straight arms and relaxed legs. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BAM!"
+ },
+ {
+  "slug": "scapular-pull-up",
+  "name": "Scapular Pull-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZAP!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Scapular Pull-Up: From a dead hang, pull shoulder blades down and back without bending elbows, release. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZAP!"
+ },
+ {
+  "slug": "australian-row",
+  "name": "Australian Row",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"WHAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Australian Row: Under a low bar, body straight, pull chest to the bar and lower slowly. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "WHAM!"
+ },
+ {
+  "slug": "negative-pull-up",
+  "name": "Negative Pull-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BOOM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Negative Pull-Up: Jump to the top position and lower yourself as slowly as possible to a dead hang. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BOOM!"
+ },
+ {
+  "slug": "chin-up",
+  "name": "Chin-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"KRAK!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a chin-up top: underhand grip, chin over the bar. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "KRAK!"
+ },
+ {
+  "slug": "pull-up",
+  "name": "Pull-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"SMASH!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a pull-up top: hanging from a bar with an overhand grip, chin over the bar, elbows pulled down, legs straight. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "SMASH!"
+ },
+ {
+  "slug": "wide-pull-up",
+  "name": "Wide Pull-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZING!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Wide Pull-Up: Grip well outside shoulders, pull chest to the bar, control the descent. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZING!"
+ },
+ {
+  "slug": "l-sit-pull-up",
+  "name": "L-Sit Pull-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"POW!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a L-Sit Pull-Up: Hold legs straight in an L while performing strict pull-ups. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "POW!"
+ },
+ {
+  "slug": "chest-to-bar-pull-up",
+  "name": "Chest-to-Bar Pull-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Chest-to-Bar Pull-Up: Pull explosively until the chest touches the bar, lean back slightly at the top. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BAM!"
+ },
+ {
+  "slug": "archer-pull-up",
+  "name": "Archer Pull-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZAP!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a archer pull-up: pulling toward one hand while the other arm stays straight along the bar. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZAP!"
+ },
+ {
+  "slug": "typewriter-pull-up",
+  "name": "Typewriter Pull-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"WHAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Typewriter Pull-Up: Pull up to one hand, slide across at the top to the other hand, lower. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "WHAM!"
+ },
+ {
+  "slug": "one-arm-pull-up",
+  "name": "One-Arm Pull-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BOOM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a one-arm pull-up top: hanging from one hand, chin at bar height, other arm relaxed at her side. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BOOM!"
+ },
+ {
+  "slug": "ring-row",
+  "name": "Ring Row",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"KRAK!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Ring Row: Lean back holding rings, body straight, pull rings to ribs. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "KRAK!"
+ },
+ {
+  "slug": "towel-pull-up",
+  "name": "Towel Pull-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"SMASH!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Towel Pull-Up: Drape towels over the bar, grip them and perform pull-ups. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "SMASH!"
+ },
+ {
+  "slug": "muscle-up",
+  "name": "Muscle-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZING!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a bar muscle-up finish: in straight-arm support above the bar, hips touching the bar, chest leaned slightly forward over the bar, legs together below. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZING!"
+ },
+ {
+  "slug": "ring-muscle-up",
+  "name": "Ring Muscle-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"POW!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a ring muscle-up transition: on gymnastics rings, chest rising over her hands in a deep dip position, false grip on the rings. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "POW!"
+ },
+ {
+  "slug": "strict-muscle-up",
+  "name": "Strict Muscle-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a strict muscle-up transition: chest passing over the bar with elbows bent, no swing, legs straight together. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BAM!"
+ },
+ {
+  "slug": "bodyweight-squat",
+  "name": "Bodyweight Squat",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZAP!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Bodyweight Squat: Feet shoulder width, sit hips back and down below parallel, stand tall. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZAP!"
+ },
+ {
+  "slug": "glute-bridge",
+  "name": "Glute Bridge",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"WHAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Glute Bridge: Lying on back, feet planted, drive hips up and squeeze glutes. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "WHAM!"
+ },
+ {
+  "slug": "single-leg-glute-bridge",
+  "name": "Single-Leg Glute Bridge",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BOOM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Single-Leg Glute Bridge: Bridge with one leg extended, driving through the planted heel. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BOOM!"
+ },
+ {
+  "slug": "lunge",
+  "name": "Lunge",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"KRAK!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Lunge: Step forward, lower back knee toward floor, push back to start. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "KRAK!"
+ },
+ {
+  "slug": "step-up",
+  "name": "Step-Up",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"SMASH!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Step-Up: Step onto a box with one foot, drive up to stand, step down with control. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "SMASH!"
+ },
+ {
+  "slug": "jump-squat",
+  "name": "Jump Squat",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZING!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Jump Squat: Squat down then explode up into a jump, land softly into the next rep. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZING!"
+ },
+ {
+  "slug": "box-jump",
+  "name": "Box Jump",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"POW!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Box Jump: Swing arms and jump onto a box, land quietly, step down. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "POW!"
+ },
+ {
+  "slug": "bulgarian-split-squat",
+  "name": "Bulgarian Split Squat",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Bulgarian Split Squat: Rear foot on a bench, lower the front leg into a deep lunge, drive up. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BAM!"
+ },
+ {
+  "slug": "cossack-squat",
+  "name": "Cossack Squat",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZAP!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Cossack Squat: Wide stance, shift into one leg squatting deep while the other stays straight. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZAP!"
+ },
+ {
+  "slug": "wall-sit",
+  "name": "Wall Sit",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"WHAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Wall Sit: Back on a wall, thighs parallel to the floor, hold. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "WHAM!"
+ },
+ {
+  "slug": "calf-raise",
+  "name": "Calf Raise",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BOOM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Calf Raise: On a step edge, rise onto the balls of your feet, lower heels below the step. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BOOM!"
+ },
+ {
+  "slug": "single-leg-calf-raise",
+  "name": "Single-Leg Calf Raise",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"KRAK!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Single-Leg Calf Raise: Single-leg calf raise through full range on a step. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "KRAK!"
+ },
+ {
+  "slug": "pistol-squat",
+  "name": "Pistol Squat",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"SMASH!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a pistol squat bottom: squatting all the way down on one leg with the heel flat, knee well forward over the toes, the other leg held straight out in front parallel to the ground, both arms reaching forward for balance. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "SMASH!"
+ },
+ {
+  "slug": "shrimp-squat",
+  "name": "Shrimp Squat",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZING!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a shrimp squat: one-leg squat holding the back foot behind her with one hand, back knee lowering to touch the floor. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZING!"
+ },
+ {
+  "slug": "sissy-squat",
+  "name": "Sissy Squat",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"POW!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Sissy Squat: On toes, lean back while bending knees forward, lowering until knees near floor, return. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "POW!"
+ },
+ {
+  "slug": "nordic-curl",
+  "name": "Nordic Curl",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Nordic curl: kneeling with ankles anchored, lowering her straight torso forward slowly. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BAM!"
+ },
+ {
+  "slug": "dragon-pistol-squat",
+  "name": "Dragon Pistol Squat",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZAP!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a dragon pistol squat: deep one-leg squat with the free leg threaded behind the standing leg. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZAP!"
+ },
+ {
+  "slug": "dead-bug",
+  "name": "Dead Bug",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"WHAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Dead Bug: On your back with arms and knees up, lower opposite arm and leg while keeping low back flat. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "WHAM!"
+ },
+ {
+  "slug": "plank",
+  "name": "Plank",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BOOM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Plank: Forearms under shoulders, body straight, squeeze glutes, hold. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BOOM!"
+ },
+ {
+  "slug": "side-plank",
+  "name": "Side Plank",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"KRAK!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Side Plank: On one forearm, stack feet, lift hips into a straight line, hold. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "KRAK!"
+ },
+ {
+  "slug": "hollow-body-hold",
+  "name": "Hollow Body Hold",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"SMASH!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Hollow Body Hold: Lying on your back, lift shoulders and legs, press low back down, hold the banana shape. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "SMASH!"
+ },
+ {
+  "slug": "arch-body-hold",
+  "name": "Arch Body Hold",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZING!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Arch Body Hold: Face down, lift chest, arms and legs off the floor, hold. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZING!"
+ },
+ {
+  "slug": "lying-leg-raise",
+  "name": "Lying Leg Raise",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"POW!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Lying Leg Raise: On your back, raise straight legs to vertical and lower slowly without arching. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "POW!"
+ },
+ {
+  "slug": "hanging-knee-raise",
+  "name": "Hanging Knee Raise",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Hanging Knee Raise: Hang from a bar and raise knees toward chest without swinging. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BAM!"
+ },
+ {
+  "slug": "hanging-leg-raise",
+  "name": "Hanging Leg Raise",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZAP!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Hanging Leg Raise: Hang and raise straight legs to at least horizontal, lower with control. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZAP!"
+ },
+ {
+  "slug": "toes-to-bar",
+  "name": "Toes-to-Bar",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"WHAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Toes-to-Bar: From a hang, raise straight legs until toes touch the bar. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "WHAM!"
+ },
+ {
+  "slug": "windshield-wipers",
+  "name": "Windshield Wipers",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BOOM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Windshield Wipers: Hang with legs vertical, rotate them side to side under control. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BOOM!"
+ },
+ {
+  "slug": "l-sit",
+  "name": "L-Sit",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"KRAK!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a L-sit on parallettes: arms locked straight, shoulders pushed down, legs straight together held horizontal at 90 degrees to the torso, hips slightly behind the hands. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "KRAK!"
+ },
+ {
+  "slug": "v-sit",
+  "name": "V-Sit",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"SMASH!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a V-sit on parallettes: arms locked straight, legs straight and raised high above horizontal into a V. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "SMASH!"
+ },
+ {
+  "slug": "manna",
+  "name": "Manna",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZING!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a manna: seated support on parallettes with hips pushed far behind the hands, legs straight pointing up and back toward her face. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZING!"
+ },
+ {
+  "slug": "ab-wheel-rollout",
+  "name": "Ab Wheel Rollout",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"POW!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Ab Wheel Rollout: Kneel with an ab wheel, roll out as far as possible while keeping hollow, roll back. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "POW!"
+ },
+ {
+  "slug": "standing-ab-wheel-rollout",
+  "name": "Standing Ab Wheel Rollout",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Standing Ab Wheel Rollout: From standing, roll the wheel out to a full extension and back. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BAM!"
+ },
+ {
+  "slug": "dragon-flag",
+  "name": "Dragon Flag",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZAP!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a dragon flag on a bench: gripping the bench behind her head, only upper back on the bench, body straight and rigid at an angle in the air. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZAP!"
+ },
+ {
+  "slug": "handstand-wall-hold",
+  "name": "Handstand Wall Hold",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"WHAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a handstand against a wall: hands on the floor a short distance from the wall, body straight vertical, heels touching the wall. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "WHAM!"
+ },
+ {
+  "slug": "crow-pose",
+  "name": "Crow Pose",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BOOM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a crow pose: squatting with hands flat on the ground, knees resting on the backs of the upper arms, feet lifted off the ground, leaning forward. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BOOM!"
+ },
+ {
+  "slug": "freestanding-handstand",
+  "name": "Freestanding Handstand",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"KRAK!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a freestanding handstand: completely vertical and stacked, wrists, shoulders, hips and ankles in one straight line, arms locked overhead, ribs in, legs together and pointed, hands flat on the ground, no wall. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "KRAK!"
+ },
+ {
+  "slug": "one-arm-handstand",
+  "name": "One-Arm Handstand",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"SMASH!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a one-arm handstand: balancing on one straight arm, legs in a straddle for balance, free arm out to the side. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "SMASH!"
+ },
+ {
+  "slug": "elbow-lever",
+  "name": "Elbow Lever",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZING!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a elbow lever: balancing horizontally on both hands with her elbows pressed into her hips. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZING!"
+ },
+ {
+  "slug": "frog-stand",
+  "name": "Frog Stand",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"POW!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a frog stand: hands on the ground, knees resting on the outside of the bent elbows, feet off the ground. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "POW!"
+ },
+ {
+  "slug": "tuck-planche",
+  "name": "Tuck Planche",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a tuck planche: knees pulled tight to chest, back rounded and horizontal, feet off the ground, elbows locked, shoulders leaned well forward of the hands. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BAM!"
+ },
+ {
+  "slug": "straddle-planche",
+  "name": "Straddle Planche",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZAP!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a straddle planche: body horizontal, legs straight and wide apart in a V, feet off the ground, elbows locked, hands under the hips, shoulders far forward of the hands. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZAP!"
+ },
+ {
+  "slug": "full-planche",
+  "name": "Full Planche",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"WHAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a full planche on the ground: body perfectly horizontal and straight from shoulders to toes, legs together, feet off the ground, elbows locked straight, hands on the ground under her hips/navel, shoulders leaned far forward past the hands, about 45 degrees between arms and torso. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "WHAM!"
+ },
+ {
+  "slug": "tuck-front-lever",
+  "name": "Tuck Front Lever",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BOOM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a tuck front lever: hanging from a bar with straight arms, back horizontal and face-up, knees tucked to chest. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BOOM!"
+ },
+ {
+  "slug": "straddle-front-lever",
+  "name": "Straddle Front Lever",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"KRAK!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a straddle front lever: hanging from a bar, straight arms angled from the bar to the shoulders, face-up horizontal body, legs straight in a wide V. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "KRAK!"
+ },
+ {
+  "slug": "full-front-lever",
+  "name": "Full Front Lever",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"SMASH!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a full front lever: hanging from a pull-up bar with straight locked arms, body perfectly horizontal and face-up, hips level with shoulders, legs together and straight, the bar is above her belly so the arms angle down to the shoulders at about 45 degrees. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "SMASH!"
+ },
+ {
+  "slug": "skin-the-cat",
+  "name": "Skin the Cat",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZING!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a skin the cat: hanging from a bar and rotating backward through her arms into an inverted tuck. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZING!"
+ },
+ {
+  "slug": "back-lever",
+  "name": "Back Lever",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"POW!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a back lever: hanging from a bar with straight arms behind her, body horizontal and face-down, legs straight and together. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "POW!"
+ },
+ {
+  "slug": "human-flag",
+  "name": "Human Flag",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"BAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a human flag on a vertical pole: top hand pulling and bottom hand pushing, both arms straight, body held sideways and horizontal like a flag, legs together. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "BAM!"
+ },
+ {
+  "slug": "bridge",
+  "name": "Bridge",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"ZAP!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a full bridge: back arched, hands and feet flat on the ground, hips pushed high. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "ZAP!"
+ },
+ {
+  "slug": "burpee",
+  "name": "Burpee",
+  "prompt": "Classic comic book panel, bold black ink outlines with thick-to-thin line weight, spotted solid blacks, flat two-tone cel shading, Ben-Day halftone dots, speed lines, simple Brazilian praça background (green park with a mosaic sidewalk and a palm tree, minimal detail). Square 1:1 composition, full body visible, side or 3/4 view so the joint angles read clearly. The ONLY lettering is one big comic sound-effect word \"WHAM!\". Vó Ferro, the exact character from the reference sheet: a 72-year-old Brazilian grandmother with warm brown skin, a big round silver hair bun pierced by two knitting needles, gold hoop earrings, gold bangles on both wrists, an orange-red sleeveless dress with yellow flowers, dark grey leggings, coral sneakers, compact powerful build with strong arms, performing a Burpee: Squat, kick back into a push-up, jump feet in, explode into a jump. Biomechanically accurate, correct balance with her centre of gravity over the support. Keep her exactly on-model with the reference sheet. No captions, no labels, no other text.",
+  "sfx": "WHAM!"
+ }
+]
