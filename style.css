@@ -86,3 +86,6 @@ section>h2::before{content:"";position:absolute;left:-6px;bottom:4px;width:calc(
 .meet-art{display:block;border:4px solid var(--ink);transform:rotate(-1deg);overflow:hidden;background:#fff4cc}
 .meet-copy h2{margin-top:0}.meet-copy blockquote{margin:14px 0 0;font-weight:800}
 @media(max-width:760px){.meet{grid-template-columns:1fr}}
+.road{list-style:none;padding:0;display:grid;gap:22px;margin:24px 0}.road li{display:grid;grid-template-columns:260px 1fr;gap:18px;align-items:center;border-left:12px solid var(--c)}.road li:nth-child(odd){transform:rotate(-.4deg)}.road li:nth-child(even){transform:rotate(.4deg)}.road .art img{width:100%;height:auto;display:block;border:3px solid var(--ink)}.road h2{font-size:30px;margin:6px 0}.road h2 small{display:block;font-size:16px;color:var(--c);letter-spacing:2px}.road h2 a{color:inherit}
+.hub .panel img{width:100%;height:auto;display:block}
+@media(max-width:760px){.road li{grid-template-columns:1fr}}
