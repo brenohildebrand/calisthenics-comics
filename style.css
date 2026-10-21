@@ -89,3 +89,4 @@ section>h2::before{content:"";position:absolute;left:-6px;bottom:4px;width:calc(
 .road{list-style:none;padding:0;display:grid;gap:22px;margin:24px 0}.road li{display:grid;grid-template-columns:260px 1fr;gap:18px;align-items:center;border-left:12px solid var(--c)}.road li:nth-child(odd){transform:rotate(-.4deg)}.road li:nth-child(even){transform:rotate(.4deg)}.road .art img{width:100%;height:auto;display:block;border:3px solid var(--ink)}.road h2{font-size:30px;margin:6px 0}.road h2 small{display:block;font-size:16px;color:var(--c);letter-spacing:2px}.road h2 a{color:inherit}
 .hub .panel img{width:100%;height:auto;display:block}
 @media(max-width:760px){.road li{grid-template-columns:1fr}}
+.gloss{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));align-items:start;gap:14px;margin:18px 0;padding:0}.gloss dt h2{margin:0 0 4px}.gloss dd{margin:0}.gloss .box{scroll-margin-top:80px}.gloss .box:target{outline:4px solid #ffb800}
