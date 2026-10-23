@@ -1,0 +1,21 @@
+// [moveA, moveB, pick A if..., pick B if...]
+module.exports=[
+['pull-up','chin-up','you want the classic back builder that leans on your lats and is the standard test of pulling strength','you want more biceps work or you are chasing your first rep, since the palms-facing grip lets most people pull a little more'],
+['push-up','diamond-push-up','you want balanced chest, shoulder and triceps work and a clean base for every harder push','you already own 15+ clean push-ups and want to load the triceps harder without equipment'],
+['bench-dip','parallel-bar-dip','you are a beginner with only a bench or chair and want to build triceps before real dips','you have bars and want the stronger, safer full dip that loads chest and triceps through a long range'],
+['parallel-bar-dip','ring-dip','you want to build raw pressing strength and add weight with a dip belt','your bar dips are solid and you want the extra stability challenge that builds the base for ring muscle-ups'],
+['muscle-up','ring-muscle-up','you train on a fixed bar and want the most common first muscle-up','you train on rings and want the deeper false-grip transition that carries over to ring skills'],
+['pistol-squat','shrimp-squat','you want a single-leg squat that also tests ankle and hip mobility','your ankles limit you in the pistol, or you want a knee-dominant single-leg squat that trains balance differently'],
+['lunge','bulgarian-split-squat','you are newer to leg training and want a simple, joint-friendly single-leg move','you want a harder single-leg move with a long stretch for quads and glutes that is easy to load with dumbbells'],
+['plank','hollow-body-hold','you are building basic core endurance and a straight body line','your plank is easy and you want the core position that every gymnastics skill is built on'],
+['l-sit','v-sit','you are learning compression and want the gateway hold for levers and handstand work','your L-sit is solid for 20+ seconds and you want the next compression and hip-flexor challenge on the road to manna'],
+['hanging-leg-raise','toes-to-bar','you want strict, controlled core work with a slow lowering','your leg raises are strong and you want the full range up to the bar, which also demands lat strength'],
+['full-front-lever','back-lever','you want a huge lat and core challenge and the classic pulling skill','you want an easier first lever skill that builds the shoulders and biceps tendons, usually learned before the front lever'],
+['full-planche','full-front-lever','you want the hardest pushing static skill and huge front delts','you want the pulling static skill, which most people reach sooner than the planche'],
+['pull-up','wide-pull-up','you want the standard grip that lets you pull the most reps and progress fastest','you want to bias the upper lats and add variety once regular pull-ups are strong'],
+['australian-row','ring-row','you have a low bar or sturdy table and want a stable horizontal pull','you have rings or straps and want an adjustable row that is also kinder to the wrists and elbows'],
+['ab-wheel-rollout','dragon-flag','you own an ab wheel and want anti-extension core work with a clear progression to standing rollouts','you want a bench-only core move that also hammers the lats and makes a great show of strength'],
+['pike-push-up','wall-handstand-push-up','you are starting vertical pressing and cannot yet hold a wall handstand comfortably','your elevated pike push-ups are strong and you can hold a wall handstand for 30+ seconds'],
+['handstand-wall-hold','freestanding-handstand','you are building shoulder strength and comfort upside down','you can hold a wall handstand for 60 seconds and want to learn to balance on your own'],
+['nordic-curl','glute-bridge','you want the strongest bodyweight hamstring exercise and have a way to anchor your feet','you are newer to leg training or want simple glute work with no equipment at all'],
+];
