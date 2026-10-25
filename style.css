@@ -90,3 +90,4 @@ section>h2::before{content:"";position:absolute;left:-6px;bottom:4px;width:calc(
 .hub .panel img{width:100%;height:auto;display:block}
 @media(max-width:760px){.road li{grid-template-columns:1fr}}
 .gloss{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));align-items:start;gap:14px;margin:18px 0;padding:0}.gloss dt h2{margin:0 0 4px}.gloss dd{margin:0}.gloss .box{scroll-margin-top:80px}.gloss .box:target{outline:4px solid #ffb800}
+.road.steps li{grid-template-columns:1fr}
